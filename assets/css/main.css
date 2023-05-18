@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-image: url('/assets/img/background.jfif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content {
+    flex: 1 0 auto;
+    
+}
+
+.footer {
+    flex-shrink: 0;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+.footer-socials {
+    font-family: Consolas, Lucida Console, Courier New, Courier;
+    font-size: 1.7em;
+}
+
+.footer-socials a {
+    color: white;
+}
+
+.home-content {
+    text-align: justify;
+}
+
+.card:hover {
+    transition: transform .5s ease;
+    transform: scale(1.08);
+}
+
+.card {
+    /* From https://css.glass */
+    background: rgba(47, 36, 186, 0.1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(11.8px);
+    -webkit-backdrop-filter: blur(11.8px);
+    border: 1px solid rgba(47, 36, 186, 0.07);
+}
+
+.navbar {
+    /* From https://css.glass */
+background: rgba(47, 36, 186, 0.03);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(9.8px);
+-webkit-backdrop-filter: blur(9.8px);
+border: 1px solid rgba(47, 36, 186, 0.07);
+}
