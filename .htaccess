@@ -1,5 +1,0 @@
-RewriteEngine on
-RewriteCond %{HTTP_HOST} ^jeancsf.github.io$ [NC,OR]
-RewriteCond %{HTTP_HOST} ^jeancsf.github.io$
-RewriteCond %{REQUEST_URI} !personal-site/
-RewriteRule (.*) /personal-site/$1 [L]
