@@ -7,10 +7,10 @@ let header = `
             <div class="collapse navbar-collapse" id="collapsibleNavId">
                 <ul class="navbar-nav me-auto mt-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" href="../index.html" aria-current="page">Home</a>
+                        <a class="nav-link active" href="index.html" aria-current="page">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/projects/projects.html">Projetos</a>
+                        <a class="nav-link" href="../projects/projects.html">Projetos</a>
                     </li>
                     
                     <li class="nav-item dropdown">
