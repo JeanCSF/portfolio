@@ -12,7 +12,7 @@ html {
 body {
     display: flex;
     flex-direction: column;
-    background-image: url('/assets/img/background.jfif');
+    background-image: url('personal-site/assets/img/background.jfif');
     background-repeat: no-repeat;
     background-size: cover;
 }

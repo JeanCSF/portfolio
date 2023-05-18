@@ -1,6 +1,6 @@
 let header = `
         <nav class="navbar navbar-expand-sm navbar-dark">
-            <a class="navbar-brand" href="../index.html">JeanCSF</a>
+            <a class="navbar-brand" href="index.html">JeanCSF</a>
             <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
                 data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
                 aria-label="Toggle navigation"></button>
@@ -10,7 +10,7 @@ let header = `
                         <a class="nav-link active" href="index.html" aria-current="page">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../projects/projects.html">Projetos</a>
+                        <a class="nav-link" href="personal-site/projects/projects.html">Projetos</a>
                     </li>
                     
                     <li class="nav-item dropdown">
