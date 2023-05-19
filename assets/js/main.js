@@ -1,10 +1,10 @@
 var base_url = window.location.origin;
 
-if (base_url == 'https://jeancsf.github.io'){
+if (base_url != 'http://127.0.0.1:5500'){
     base_url += '/personal-site'
 }
 
-
+console.log(base_url);
 let header = `
         <nav class="navbar navbar-expand-sm navbar-dark">
             <a class="navbar-brand" href="${base_url}/index.html">JeanCSF</a>
