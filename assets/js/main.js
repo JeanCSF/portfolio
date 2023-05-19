@@ -1,25 +1,28 @@
 var base_url = window.location.origin;
-
 if (base_url != 'http://127.0.0.1:5500'){
     base_url += '/personal-site'
 }
-
 console.log(base_url);
+
+
+
 let header = `
         <nav class="navbar navbar-expand-sm navbar-dark">
-            <a class="navbar-brand" href="${base_url}/index.html">JeanCSF</a>
+            <a class="navbar-brand" role="button" onClick="home()" style="cursor:pointer;">JeanCSF</a>
             <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
                 data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
                 aria-label="Toggle navigation"></button>
             <div class="collapse navbar-collapse" id="collapsibleNavId">
                 <ul class="navbar-nav me-auto mt-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" href="${base_url}/index.html" aria-current="page">Home</a>
+                        <a class="nav-link" role="button" onClick="home()" style="cursor:pointer;" aria-current="page">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" role="button" style="cursor:pointer;" onClick="projects()">Projetos</a>
                     </li>
-                    
+                    <li class="nav-item">
+                        <a class="nav-link" role="button" style="cursor:pointer;" onClick="about()">Sobre</a>
+                    </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">Dropdown</a>
@@ -38,61 +41,7 @@ let header = `
 `;
 document.getElementById('header').innerHTML = header;
 
-let main = `
-<div class="row">
-<div class="col-lg-2 col-sm-auto col-md-auto footer">
-    <div class="row">
-        <div class="p-2 card">
-            <img src="https://placehold.co/100" class="card-img-top img-fluid" alt="Profile Card">
-            <div class="card-body">
-                <h5 class="card-title">Jean Carlos</h5>
-                <p class="text-muted">JeanCSF</p>
-                <p class="card-text mt-5"><i class="fa fa-building me-2"></i> CRF-SP</p>
-                <p class="card-text mt-2"><i class="fa fa-location-dot me-2"></i> São Paulo, Brasil</p>
-            </div>
-            <div class="card-footer">
-                <small class="text-muted">Última atualização 19/05/2023</small>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="col-lg-8 col-sm-auto col-md-auto">
-    <h1 class="text-center">Home</h1>
-    <hr>
-    <div class="home-content ms-2">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam blanditiis fugiat eaque
-            doloremque possimus voluptatum, quas iure dolores. At praesentium incidunt aliquam cupiditate
-            laborum expedita optio reiciendis a omnis cumque.
-            Quas ipsam modi, quidem asperiores perferendis rem explicabo maiores exercitationem eveniet.
-            Explicabo, deserunt quos, provident itaque deleniti molestias maiores quidem ea accusantium amet
-            similique fugiat quasi qlis nemo consectetur! Est totam aperiam dignissimos. Quam inventore amet
-            recusandae maxime assumenda? Tempore!
-            Odio commodi veritatis porro repellendus fugiat exercitationem natus delectus ipsum aut vel,
-            pariatur, iure id inventore adipisci, libero ducimus! Ducimus nisi a, fugiat itaque praesentium
-            eaque nihil voluptate esse recusandae?
-            Provident explicabo incidunt, enim cumque sequi nam, ea, dolorem non consequuntur architecto
-            maiores perferendis commodi optio velit ipsa necessitatibus inventore consectetur! Magnam velit
-            illo doloribus et doloremque nihil optio libero?
-            Impedit natus tempore, architecto vero sapiente provident nesciunt dolores eaque reprehenderit
-            possimus neque minus aliquam laborum, id consectetur maiores et excepturi. Est obcaecati ducimus
-            dolorum vel impedit voluptatibus vero repudiandae?
-            At quod aliquid quos alias reiciendis laboriosam ratione debitis nemo, expedita deserunt, sit
-            quae cumque totam. Id alias repellat sunt. Vel ullam iure officiis quos inventore, eaque
-            quisquam quasi deserunt.
-            Sequi amet veniam, tempore qui nisi veritatis fuga facilis possimus perferendis similique, nemo
-            doloribus dolores eos maiores pariatur. Itaque, libero possimus. Illo quasi dolor illum animi
-            fuga in voluptatem eaque.
-            Similique bes nisi quos dolores. Hic aut architecto veniam non exercitationem. Assumenda
-            quibusdam debitis atque esse? Repellat suscipit ipsam veniam tempora voluptatum rerum, magni
-            maiores aliquid praesentium molestias eaque pariatur!</p>
-    </div>
-</div>
-<div class="col-1">
-    
-</div>
-</div>
-`;
-document.getElementById('content').innerHTML = main;
+window.onload = home();
 
 let footer = `
     <div class="text-center footer-socials">
@@ -113,13 +62,68 @@ let footer = `
 `;
 document.getElementById('footer').innerHTML = footer;
 
-let year = new Date();
-document.getElementById('yearSpan').textContent = year.getFullYear();
+function home(){
+    main = `
+    <div class="row">
+    <div class="col-lg-2 col-sm-auto col-md-auto footer">
+        <div class="row">
+            <div class="p-2 card">
+                <img src="https://placehold.co/100" class="card-img-top img-fluid" alt="Profile Card">
+                <div class="card-body">
+                    <h5 class="card-title">Jean Carlos</h5>
+                    <p class="text-muted">JeanCSF</p>
+                    <p class="card-text mt-5"><i class="fa fa-building me-2"></i> CRF-SP</p>
+                    <p class="card-text mt-2"><i class="fa fa-location-dot me-2"></i> São Paulo, Brasil</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Última atualização 19/05/2023</small>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-8 col-sm-auto col-md-auto">
+        <h1 class="text-center fw-bold">Home</h1>
+        <hr>
+        <div class="home-content ms-2">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam blanditiis fugiat eaque
+                doloremque possimus voluptatum, quas iure dolores. At praesentium incidunt aliquam cupiditate
+                laborum expedita optio reiciendis a omnis cumque.
+                Quas ipsam modi, quidem asperiores perferendis rem explicabo maiores exercitationem eveniet.
+                Explicabo, deserunt quos, provident itaque deleniti molestias maiores quidem ea accusantium amet
+                similique fugiat quasi qlis nemo consectetur! Est totam aperiam dignissimos. Quam inventore amet
+                recusandae maxime assumenda? Tempore!
+                Odio commodi veritatis porro repellendus fugiat exercitationem natus delectus ipsum aut vel,
+                pariatur, iure id inventore adipisci, libero ducimus! Ducimus nisi a, fugiat itaque praesentium
+                eaque nihil voluptate esse recusandae?
+                Provident explicabo incidunt, enim cumque sequi nam, ea, dolorem non consequuntur architecto
+                maiores perferendis commodi optio velit ipsa necessitatibus inventore consectetur! Magnam velit
+                illo doloribus et doloremque nihil optio libero?
+                Impedit natus tempore, architecto vero sapiente provident nesciunt dolores eaque reprehenderit
+                possimus neque minus aliquam laborum, id consectetur maiores et excepturi. Est obcaecati ducimus
+                dolorum vel impedit voluptatibus vero repudiandae?
+                At quod aliquid quos alias reiciendis laboriosam ratione debitis nemo, expedita deserunt, sit
+                quae cumque totam. Id alias repellat sunt. Vel ullam iure officiis quos inventore, eaque
+                quisquam quasi deserunt.
+                Sequi amet veniam, tempore qui nisi veritatis fuga facilis possimus perferendis similique, nemo
+                doloribus dolores eos maiores pariatur. Itaque, libero possimus. Illo quasi dolor illum animi
+                fuga in voluptatem eaque.
+                Similique bes nisi quos dolores. Hic aut architecto veniam non exercitationem. Assumenda
+                quibusdam debitis atque esse? Repellat suscipit ipsam veniam tempora voluptatum rerum, magni
+                maiores aliquid praesentium molestias eaque pariatur!</p>
+        </div>
+    </div>
+    <div class="col-1">
+        
+    </div>
+    </div>
+    `;
+    document.getElementById('content').innerHTML = main;
+}
 
 function projects(){
     let main = `
     <div class="col-8 offset-2">
-            <h1 class="text-center">Projetos</h1>
+            <h1 class="text-center fw-bold">Projetos</h1>
             <hr>
         </div>
         <div class="row">
@@ -168,3 +172,46 @@ function projects(){
     `;
     document.getElementById('content').innerHTML = main
 }
+
+function about(){
+    let main = `
+    <div class="col-8 offset-2">
+        <h1 class="text-center fw-bold">Sobre</h1>
+        <hr>
+    </div>
+    <div class="row">
+        <div class="col-8 offset-2 home-content">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia vero cupiditate in nemo eveniet blanditiis,
+            voluptates ducimus veniam explicabo consequuntur similique illo a odit ut nam quo quod error eius?
+            Quibusdam doloremque ratione quod explicabo et asperiores, quos ipsum suscipit sunt illum, modi mollitia
+            laborum dolorem numquam vitae illo velit odio aut. Atque, quas? Magni dolores sint quasi error optio.
+            Illum itaque rerum molestiae recusandae nihil voluptatum, commodi labore ullam. Atque beatae quo porro
+            dolores quas! Totam, neque aut fuga fugiat asperiores possimus iure optio maiores est incidunt cum. Ipsam?
+            Eos veritatis pariatur ullam deleniti. Obcaecati aperiam aliquid earum laboriosam ut at, dolore maiores?
+            Architecto sit blanditiis dolore molestias natus in repellendus sed? Possimus aspernatur culpa placeat
+            fugiat nihil. Itaque.
+            Odit accusantium impedit culpa. Blanditiis in optio ex consequuntur assumenda pariatur iusto voluptate
+            corrupti quibusdam, est, consectetur voluptatem ducimus, ea placeat at voluptatibus? Assumenda quis
+            voluptates provident fugiat enim fugit.
+            Quo reprehenderit eos ea praesentium soluta, hic modi nihil provident, molestiae sit molestias suscipit
+            quasi mollitia magni minima, in veniam facilis. Exercitationem ratione cumque facilis ducimus, nobis in quae
+            beatae!
+            Minima accusamus facilis voluptatum nam? Officia, accusantium ipsam expedita quae facere harum! Culpa
+            exercitationem repellat ipsum at dolor incidunt, recusandae soluta totam sunt. Voluptate, fugiat veniam eum
+            harum laborum in.
+            Excepturi culpa odit reprehenderit cum sint illo quam accusantium. Repudiandae nemo saepe dolorum
+            cupiditate, error harum doloribus quis illum quod modi in, quidem vero ipsum fugit suscipit facere.
+            Accusamus, amet.
+            Blanditiis quos veritatis eius mollitia aspernatur quidem odio omnis, deleniti, excepturi minus animi
+            quaerat, veniam saepe quam cupiditate impedit est. Rem dolores cum sit, quo aliquam id! Voluptate, enim
+            deleniti?
+            Quia et, saepe officiis amet fuga recusandae quod natus ipsa deserunt optio, tempore eaque in delectus? At
+            eveniet quas ipsam tempora ex quaerat totam nulla vero repellendus! Obcaecati, praesentium unde?</p>
+    </div>
+</div>  
+    `;
+    document.getElementById('content').innerHTML = main
+}
+
+let year = new Date();
+document.getElementById('yearSpan').textContent = year.getFullYear();
