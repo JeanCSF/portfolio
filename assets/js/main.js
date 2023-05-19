@@ -1,16 +1,16 @@
-var base_url = window.location.origin;
-var host = window.location.host;
+var getUrl = window.location;
+var baseUrl = getUrl .protocol + "//" + getUrl.host + "/" + getUrl.pathname.split('/')[1];
 
 let header = `
         <nav class="navbar navbar-expand-sm navbar-dark">
-            <a class="navbar-brand" href="${host}/index.html">JeanCSF</a>
+            <a class="navbar-brand" href="${baseUrl}">JeanCSF</a>
             <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
                 data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
                 aria-label="Toggle navigation"></button>
             <div class="collapse navbar-collapse" id="collapsibleNavId">
                 <ul class="navbar-nav me-auto mt-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" href="${host}/index.html" aria-current="page">Home</a>
+                        <a class="nav-link active" href="${baseUrl}" aria-current="page">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" role="button" style="cursor:pointer;" onClick="projects()">Projetos</a>
@@ -123,7 +123,7 @@ function projects(){
                  
             </div>
             <div class="col-8 home-content d-flex justify-content-between flex-column">
-                <img class="img-fluid rounded float-start" src="${host}/assets/img/projects/cronometer/main-cronometer.png"
+                <img class="img-fluid rounded float-start" src="${baseUrl}/assets/img/projects/cronometer/main-cronometer.png"
                     alt="Main cronometer screen">
                 <h3>Cronômetro.js</h3>
                 <hr>
@@ -144,7 +144,7 @@ function projects(){
                  
             </div>
             <div class="col-8 home-content d-flex justify-content-between flex-column">
-                <img class="img-fluid rounded" src="${host}/assets/img/projects/triangles/main-triangles.png"
+                <img class="img-fluid rounded" src="${baseUrl}/assets/img/projects/triangles/main-triangles.png"
                     alt="Main cronometer screen">
                 <h3>Calculo de triângulo</h3>
                 <hr>
