@@ -8,34 +8,22 @@ console.log(base_url);
 
 let header = `
         <nav class="navbar navbar-expand-sm navbar-dark">
-            <a class="navbar-brand" role="button" onClick="home()" style="cursor:pointer;">JeanCSF</a>
+            <a href="javascript:home();" class="navbar-brand" role="button"><img src="${base_url}/assets/img/jean/JeanCSF.png" class="img-fluid rounded-circle opacity-50" width="84" alt="Logo"></a>
             <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
                 data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
                 aria-label="Toggle navigation"></button>
-            <div class="collapse navbar-collapse" id="collapsibleNavId">
-                <ul class="navbar-nav me-auto mt-lg-0">
+            <div class="collapse navbar-collapse text-center" id="collapsibleNavId">
+                <ul class="navbar-nav me-auto mt-lg-0 fs-4">
                     <li class="nav-item">
-                        <a class="nav-link" role="button" onClick="home()" style="cursor:pointer;" aria-current="page">Home</a>
+                        <a href="javascript:home();" class="nav-link mx-2" role="button" aria-current="page">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" role="button" style="cursor:pointer;" onClick="projects()">Projetos</a>
+                        <a href="javascript:projects();" class="nav-link mx-2" role="button">Projetos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" role="button" style="cursor:pointer;" onClick="about()">Sobre</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownId">
-                            <a class="dropdown-item" href="#">Action 1</a>
-                            <a class="dropdown-item" href="#">Action 2</a>
-                        </div>
+                        <a href="javascript:about();" class="nav-link mx-2" role="button">Sobre</a>
                     </li>
                 </ul>
-                <form class="d-flex my-lg-0">
-                    <input class="form-control form-control-sm me-sm-2 bg-dark" type="search" placeholder="Pesquisa">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
-                </form>
             </div>
         </nav>
 `;
@@ -44,18 +32,20 @@ document.getElementById('header').innerHTML = header;
 window.onload = home();
 
 let footer = `
-    <div class="text-center footer-socials">
+    <div class="col-6 footer-socials">
             <a href="https://wa.me/5511932094609" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
             <a class="mx-5" href="mailto:jean.csf.17@gmail.com" target="_blank"><i class="fa fa-envelope-circle-check"></i></a>
             <a class="me-5" href="https://github.com/JeanCSF" target="_blank"><i class="fa-brands fa-github"></i></a>
             <a class="me-5" href="https://www.linkedin.com/in/jean-carlos-6149a2232/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-            <a class="me-5" href="https://facebook.com/fookinselfish" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-            <a class="me-5" href="https://twitter.com/JCS_16" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-            <a class="me-5" href="https://instagram.com/fookinselfish" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <a class="me-5" href="https://twitch.tv/c0ka0" target="_blank"><i class="fa-brands fa-twitch"></i></a>
-            <a class="me-5" href="https://www.youtube.com/channel/UCFaLrf0TN1DcKS0pUcb7Zzw" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-            <a class="me-5" href="https://soundcloud.com/fookinselfish" target="_blank"><i class="fa-brands fa-soundcloud"></i></a>
-        </div>
+    </div>
+    <div class="text-end col-6 footer-social-text">
+            <a class="link-light" href="https://facebook.com/fookinselfish" target="_blank">Facebook</a>
+            <a class="mx-3 link-light" href="https://twitter.com/JCS_16" target="_blank">Twitter</a>
+            <a class="me-3 link-light" href="https://instagram.com/fookinselfish" target="_blank">Instagram</a>
+            <a class="me-3 link-light" href="https://twitch.tv/c0ka0" target="_blank">Twitch</a>
+            <a class="me-3 link-light" href="https://www.youtube.com/channel/UCFaLrf0TN1DcKS0pUcb7Zzw" target="_blank">Youtube</a>
+            <a class="me-3 link-light" href="https://soundcloud.com/fookinselfish" target="_blank">Soundcloud</a>
+    </div>
         <div class="text-center">
             <p class="fw-bold">JeanCSF&copy; <span id="yearSpan"></span></p>
         </div>
@@ -65,23 +55,8 @@ document.getElementById('footer').innerHTML = footer;
 function home(){
     main = `
     <div class="row">
-    <div class="col-lg-2 col-sm-auto col-md-auto footer">
-        <div class="row">
-            <div class="p-2 card">
-                <img src="https://placehold.co/100" class="card-img-top img-fluid" alt="Profile Card">
-                <div class="card-body">
-                    <h5 class="card-title">Jean Carlos</h5>
-                    <p class="text-muted">JeanCSF</p>
-                    <p class="card-text mt-5"><i class="fa fa-building me-2"></i> CRF-SP</p>
-                    <p class="card-text mt-2"><i class="fa fa-location-dot me-2"></i> São Paulo, Brasil</p>
-                </div>
-                <div class="card-footer">
-                    <small class="text-muted">Última atualização 19/05/2023</small>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-8 col-sm-auto col-md-auto">
+    
+    <div class="col-lg-8 col-sm-auto col-md-auto offset-lg-2 offset-sm-auto offset-md-auto">
         <h1 class="text-center fw-bold">Home</h1>
         <hr>
         <div class="home-content ms-2">
@@ -127,10 +102,25 @@ function projects(){
             <hr>
         </div>
         <div class="row">
-            <div class="col-2">
-                 
+            <div class="col-8 offset-2 home-content d-flex justify-content-between flex-column">
+                <img class="img-fluid rounded" src="${base_url}/assets/img/projects/loginci4/main-login.png"
+                    alt="Main login screen">
+                <h3>Sistema de login</h3>
+                <hr>
+                <h5>Autenticação de usuário desenvolvida na framework CodeIgniter4(PHP)</h5>
+                <p>Sistema efetua o cadastro do usuário interessado, as senhas são armazenadas encriptografadas para maior segurança.
+                Apos concluir a etapa de cadastro o usuário é orientado a checar seu e-mail para confirma-lo e ativar sua conta, ao efetuar
+                o login de fato o sistema checa se as credenciais digitadas estão corretas e se a conta já foi ativada(via e-mail de ativação),
+                o usuário só irá ter acesso se as credenciais estiverem corretas e a conta estiver ativa.</p>
+                <p class="text-end"><a href="https://www.youtube.com/channel/UCFaLrf0TN1DcKS0pUcb7Zzw" class="text-muted text-decoration-none">Link para playlist no meu canal</a></p>
+                <div class="mt-5 text-end">
+                    <a href="https://github.com/JeanCSF/loginCI4" target="_blank"
+                        class="text-muted text-decoration-none">Repositório</a>
+                </div>
             </div>
-            <div class="col-8 home-content d-flex justify-content-between flex-column">
+        </div>
+        <div class="row mt-5">
+            <div class="col-8 offset-2 home-content d-flex justify-content-between flex-column">
                 <img class="img-fluid rounded float-start" src="${base_url}/assets/img/projects/cronometer/main-cronometer.png"
                     alt="Main cronometer screen">
                 <h3>Cronômetro.js</h3>
@@ -143,15 +133,9 @@ function projects(){
                         class="text-muted text-decoration-none">Repositório</a>
                 </div>
             </div>
-            <div class="col-2">
-                 
-            </div>
         </div>
         <div class="row mt-5">
-            <div class="col-2">
-                 
-            </div>
-            <div class="col-8 home-content d-flex justify-content-between flex-column">
+            <div class="col-8 offset-2 home-content d-flex justify-content-between flex-column">
                 <img class="img-fluid rounded" src="${base_url}/assets/img/projects/triangles/main-triangles.png"
                     alt="Main cronometer screen">
                 <h3>Calculo de triângulo</h3>
@@ -164,9 +148,6 @@ function projects(){
                     <a href="https://github.com/JeanCSF/A2ProgramacaoWeb-Triangulos" target="_blank"
                         class="text-muted text-decoration-none">Repositório</a>
                 </div>
-            </div>
-            <div class="col-2">
-                 
             </div>
         </div>
     `;
