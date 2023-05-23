@@ -1,5 +1,5 @@
 var base_url = window.location.origin;
-if (base_url != 'http://127.0.0.1:5500'){
+if (base_url != 'http://127.0.0.1:5500') {
     base_url += '/personal-site'
 }
 console.log(base_url);
@@ -11,7 +11,7 @@ let header = `
             <a href="javascript:home();" class="navbar-brand" role="button"><img src="${base_url}/assets/img/jean/JeanCSF.png" class="img-fluid rounded-circle opacity-50" width="84" alt="Logo"></a>
             <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
                 data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
-                aria-label="Toggle navigation"></button>
+                aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
             <div class="collapse navbar-collapse text-center" id="collapsibleNavId">
                 <ul class="navbar-nav me-auto mt-lg-0 fs-4">
                     <li class="nav-item">
@@ -29,7 +29,7 @@ let header = `
 `;
 document.getElementById('header').innerHTML = header;
 
-function home(){
+function home() {
     let main = `
     <div class="col-8 offset-2">
         <h1 class="text-center fw-bold">Home</h1>
@@ -38,7 +38,7 @@ function home(){
     <div class="row">
         <div class="col-lg-8 col-sm-auto col-md-auto offset-lg-2 offset-sm-auto offset-md-auto home-content">
             <h4>
-                Olá, seja bem vindo!
+                Olá, seja bem vindo(a)!
             </h4>
             <p>
                 Este site tem por finalidade ser o meu portifólio, é aqui onde ficam exibidos os principais projetos que participei 
@@ -54,12 +54,11 @@ function home(){
             <p>
                 As técnologias utilizadas aqui foram: HTML, responsável pelo "esqueleto" do site. CSS, para dar estilo aos elementos. JavaScript, para o 
                 carregamento das seções. <a class="link-light" href="https://getbootstrap.com/" target="_blank">Bootstrap</a>, sua classe de grid foi muito 
-                utilizada neste site para deixa tudo alinhado e principalmente deixar o site responsívo. <a class="link-light" href="https://fontawesome.com/" target="_blank">FontAwesome</a>, 
+                utilizada neste site para deixar tudo alinhado e principalmente deixar o site responsívo. <a class="link-light" href="https://fontawesome.com/" target="_blank">FontAwesome</a>, 
                 foi utilizado para estilizar alguns dos icones da página.
             </p>
-            <p class="text-end mt-5">
-                Imagem de fundo: <a class="link-light" href="https://artsdot.com/ADC/Art-ImgScreen-2.nsf/O/A-8XYR3Q/$FILE/Peter-paul-rubens-the-battle-of-the-amazons.Jpg" target="_blank">The Batle of The Amazons de Peter Paul Rubens</a>
-            </p>
+                <p class="text-end mt-4">Imagem de fundo: <a class="link-light" href="https://artsdot.com/ADC/Art-ImgScreen-2.nsf/O/A-8XYR3Q/$FILE/Peter-paul-rubens-the-battle-of-the-amazons.Jpg" target="_blank">The Batle of The Amazons de Peter Paul Rubens</a></p>
+                <p class="text-end"><a class="link-light" href="https://github.com/JeanCSF/personal-site" target="_blank">Repositório</a></p>
         </div>
     </div>
     `;
@@ -88,7 +87,7 @@ let footer = `
 `;
 document.getElementById('footer').innerHTML = footer;
 
-function projects(){
+function projects() {
     let main = `
     <div class="col-8 offset-2">
             <h1 class="text-center fw-bold">Projetos</h1>
@@ -105,16 +104,16 @@ function projects(){
                 Apos concluir a etapa de cadastro o usuário é orientado a checar seu e-mail para confirma-lo e ativar sua conta, ao efetuar
                 o login de fato o sistema checa se as credenciais digitadas estão corretas e se a conta já foi ativada(via e-mail de ativação),
                 o usuário só irá ter acesso se as credenciais estiverem corretas e a conta estiver ativa.</p>
-                <p class="text-end"><a href="https://www.youtube.com/channel/UCFaLrf0TN1DcKS0pUcb7Zzw" class="text-muted text-decoration-none">Link para playlist no meu canal</a></p>
+                <p class="text-end"><a href="https://www.youtube.com/channel/UCFaLrf0TN1DcKS0pUcb7Zzw" class="text-muted" target="_blank">Link para playlist no meu canal</a></p>
                 <div class="mt-5 text-end">
                     <a href="https://github.com/JeanCSF/loginCI4" target="_blank"
-                        class="text-muted text-decoration-none">Repositório</a>
+                        class="text-muted">Repositório</a>
                 </div>
             </div>
         </div>
         <div class="row mt-5">
             <div class="col-lg-8 col-sm-auto col-md-auto offset-lg-2 offset-sm-auto offset-md-auto home-content d-flex justify-content-between flex-column">
-                <img class="img-fluid rounded float-start" src="${base_url}/assets/img/projects/cronometer/main-cronometer.png"
+                <img class="img-fluid rounded" src="${base_url}/assets/img/projects/cronometer/main-cronometer.png"
                     alt="Main cronometer screen">
                 <h3>Cronômetro.js</h3>
                 <hr>
@@ -123,7 +122,7 @@ function projects(){
                     soa um alarme</p>
                 <div class="mt-5 text-end">
                     <a href="https://github.com/JeanCSF/cronometro.js" target="_blank"
-                        class="text-muted text-decoration-none">Repositório</a>
+                        class="text-muted">Repositório</a>
                 </div>
             </div>
         </div>
@@ -139,7 +138,7 @@ function projects(){
                     fornecidas o usuário é informado.</p>
                 <div class="mt-5 text-end">
                     <a href="https://github.com/JeanCSF/A2ProgramacaoWeb-Triangulos" target="_blank"
-                        class="text-muted text-decoration-none">Repositório</a>
+                        class="text-muted">Repositório</a>
                 </div>
             </div>
         </div>
@@ -147,7 +146,7 @@ function projects(){
     document.getElementById('content').innerHTML = main
 }
 
-function about(){
+function about() {
     let main = `
     <div class="col-8 offset-2">
         <h1 class="text-center fw-bold">Sobre</h1>
@@ -155,37 +154,45 @@ function about(){
     </div>
     <div class="row">
         <div class="col-lg-8 col-sm-auto col-md-auto offset-lg-2 offset-sm-auto offset-md-auto home-content">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia vero cupiditate in nemo eveniet blanditiis,
-            voluptates ducimus veniam explicabo consequuntur similique illo a odit ut nam quo quod error eius?
-            Quibusdam doloremque ratione quod explicabo et asperiores, quos ipsum suscipit sunt illum, modi mollitia
-            laborum dolorem numquam vitae illo velit odio aut. Atque, quas? Magni dolores sint quasi error optio.
-            Illum itaque rerum molestiae recusandae nihil voluptatum, commodi labore ullam. Atque beatae quo porro
-            dolores quas! Totam, neque aut fuga fugiat asperiores possimus iure optio maiores est incidunt cum. Ipsam?
-            Eos veritatis pariatur ullam deleniti. Obcaecati aperiam aliquid earum laboriosam ut at, dolore maiores?
-            Architecto sit blanditiis dolore molestias natus in repellendus sed? Possimus aspernatur culpa placeat
-            fugiat nihil. Itaque.
-            Odit accusantium impedit culpa. Blanditiis in optio ex consequuntur assumenda pariatur iusto voluptate
-            corrupti quibusdam, est, consectetur voluptatem ducimus, ea placeat at voluptatibus? Assumenda quis
-            voluptates provident fugiat enim fugit.
-            Quo reprehenderit eos ea praesentium soluta, hic modi nihil provident, molestiae sit molestias suscipit
-            quasi mollitia magni minima, in veniam facilis. Exercitationem ratione cumque facilis ducimus, nobis in quae
-            beatae!
-            Minima accusamus facilis voluptatum nam? Officia, accusantium ipsam expedita quae facere harum! Culpa
-            exercitationem repellat ipsum at dolor incidunt, recusandae soluta totam sunt. Voluptate, fugiat veniam eum
-            harum laborum in.
-            Excepturi culpa odit reprehenderit cum sint illo quam accusantium. Repudiandae nemo saepe dolorum
-            cupiditate, error harum doloribus quis illum quod modi in, quidem vero ipsum fugit suscipit facere.
-            Accusamus, amet.
-            Blanditiis quos veritatis eius mollitia aspernatur quidem odio omnis, deleniti, excepturi minus animi
-            quaerat, veniam saepe quam cupiditate impedit est. Rem dolores cum sit, quo aliquam id! Voluptate, enim
-            deleniti?
-            Quia et, saepe officiis amet fuga recusandae quod natus ipsa deserunt optio, tempore eaque in delectus? At
-            eveniet quas ipsam tempora ex quaerat totam nulla vero repellendus! Obcaecati, praesentium unde?</p>
+            <h4>Olá, me chamo Jean Carlos</h4>
+            <p>
+                Atualmente tenho <span id="ageSpan"></span> anos, estou cursando Análise e Desenvolvimento de Sistemas
+                na UNICID do Tatuapé, estou partindo para o último semestre. Estou vindo de uma transição de carreira,
+                anteriormente trabalhava com vendas no setor de varejo e atualmente sou estagiário em desenvolvimento
+                pelo CRF-SP, mas meu contrato está perto de acabar e aqui eles não efetivam, então estou a procura de
+                novas oportunidades se for o caso pode entra em contato comigo.
+            </p>
+            <p>
+                Um dos meus maiores pontos fortes creio que seja a assimilação, quando se trata de aprender algo novo
+                sempre tenho certa facilidade para captar as informações, habilidade essa que vem ficando cada vez melhor
+                com o passar dos anos. E falando de pontos fracos, o principal seria a comunicação, mas de fato é algo que 
+                têm melhorado ultimamente. Também sou muito persistente, quando me deparo com um problema eu sempre tento
+                todas as formas de resolve-lo ao invés de ignorar.
+            </p>
+            <p>
+                Tenho poucos hobbys, mas o principal com certeza é ouvir música, é algo que sempre estou fazendo meio que faz
+                parte de mim, também tenho grande apreço por pinturas e outros tipos de arte, também gosto bastante de jogar nas minhas
+                horas vagas!
+            </p>
     </div>
 </div>  
     `;
     document.getElementById('content').innerHTML = main
+    document.getElementById('ageSpan').textContent = getAge('1997/01/05');
 }
 
 let year = new Date();
 document.getElementById('yearSpan').textContent = year.getFullYear();
+
+function getAge(dateString) {
+    const today = new Date();
+    const birthDate = new Date(dateString);
+    let age = today.getFullYear() - birthDate.getFullYear();
+    const m = today.getMonth() - birthDate.getMonth();
+    
+    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+        age--;
+    }
+    
+    return age;
+}
