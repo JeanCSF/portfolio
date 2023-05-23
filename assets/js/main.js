@@ -52,7 +52,7 @@ function home(){
                 no site já carrega direto, fazendo com que o carregamento entre uma seção e outra seja praticamente nulo.
             </p>
             <p>
-                As técnologias utilizadas aqui foram: HTML, responsável pelo "esqueleto" do site. CSS, para das estilo aos elementos. JavaScript, para o 
+                As técnologias utilizadas aqui foram: HTML, responsável pelo "esqueleto" do site. CSS, para dar estilo aos elementos. JavaScript, para o 
                 carregamento das seções. <a class="link-light" href="https://getbootstrap.com/" target="_blank">Bootstrap</a>, sua classe de grid foi muito 
                 utilizada neste site para deixa tudo alinhado e principalmente deixar o site responsívo. <a class="link-light" href="https://fontawesome.com/" target="_blank">FontAwesome</a>, 
                 foi utilizado para estilizar alguns dos icones da página.
