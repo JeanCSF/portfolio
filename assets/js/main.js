@@ -37,32 +37,28 @@ function home(){
     </div>
     <div class="row">
         <div class="col-lg-8 col-sm-auto col-md-auto offset-lg-2 offset-sm-auto offset-md-auto home-content">
+            <h4>
+                Olá, seja bem vindo!
+            </h4>
             <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam blanditiis fugiat eaque
-                doloremque possimus voluptatum, quas iure dolores. At praesentium incidunt aliquam cupiditate
-                laborum expedita optio reiciendis a omnis cumque.
-                Quas ipsam modi, quidem asperiores perferendis rem explicabo maiores exercitationem eveniet.
-                Explicabo, deserunt quos, provident itaque deleniti molestias maiores quidem ea accusantium amet
-                similique fugiat quasi qlis nemo consectetur! Est totam aperiam dignissimos. Quam inventore amet
-                recusandae maxime assumenda? Tempore!
-                Odio commodi veritatis porro repellendus fugiat exercitationem natus delectus ipsum aut vel,
-                pariatur, iure id inventore adipisci, libero ducimus! Ducimus nisi a, fugiat itaque praesentium
-                eaque nihil voluptate esse recusandae?
-                Provident explicabo incidunt, enim cumque sequi nam, ea, dolorem non consequuntur architecto
-                maiores perferendis commodi optio velit ipsa necessitatibus inventore consectetur! Magnam velit
-                illo doloribus et doloremque nihil optio libero?
-                Impedit natus tempore, architecto vero sapiente provident nesciunt dolores eaque reprehenderit
-                possimus neque minus aliquam laborum, id consectetur maiores et excepturi. Est obcaecati ducimus
-                dolorum vel impedit voluptatibus vero repudiandae?
-                At quod aliquid quos alias reiciendis laboriosam ratione debitis nemo, expedita deserunt, sit
-                quae cumque totam. Id alias repellat sunt. Vel ullam iure officiis quos inventore, eaque
-                quisquam quasi deserunt.
-                Sequi amet veniam, tempore qui nisi veritatis fuga facilis possimus perferendis similique, nemo
-                doloribus dolores eos maiores pariatur. Itaque, libero possimus. Illo quasi dolor illum animi
-                fuga in voluptatem eaque.
-                Similique bes nisi quos dolores. Hic aut architecto veniam non exercitationem. Assumenda
-                quibusdam debitis atque esse? Repellat suscipit ipsam veniam tempora voluptatum rerum, magni
-                maiores aliquid praesentium molestias eaque pariatur!
+                Este site tem por finalidade ser o meu portifólio, é aqui onde ficam exibidos os principais projetos que participei 
+                ou desenvolvi por conta própria. Este site foi desenvolvido em uma única página, os conteúdos aqui dispostos são trazidos
+                por meio do JavaScript, todos os elementos tanto dessa seção quanto das outras são renderizados por meio desta linguagem.
+            </p>
+            <p>
+                O motivo pelo qual optei por este método de desenvolvimento deve-se a o fato de que, inicialmente o site ficará hospedado
+                no <a class="link-light" href="https://pages.github.com/" target="_blank">GitHub-Pages</a> e é exigido que os sites que são hospedados lá sejam 
+                apenas páginas estáticas, sendo assim achei que seria uma boa ideia já deixar tudo em uma página só, dessa forma tudo que tem 
+                no site já carrega direto, fazendo com que o carregamento entre uma seção e outra seja praticamente nulo.
+            </p>
+            <p>
+                As técnologias utilizadas aqui foram: HTML, responsável pelo "esqueleto" do site. CSS, para das estilo aos elementos. JavaScript, para o 
+                carregamento das seções. <a class="link-light" href="https://getbootstrap.com/" target="_blank">Bootstrap</a>, sua classe de grid foi muito 
+                utilizada neste site para deixa tudo alinhado e principalmente deixar o site responsívo. <a class="link-light" href="https://fontawesome.com/" target="_blank">FontAwesome</a>, 
+                foi utilizado para estilizar alguns dos icones da página.
+            </p>
+            <p class="text-end mt-5">
+                Imagem de fundo: <a class="link-light" href="https://artsdot.com/ADC/Art-ImgScreen-2.nsf/O/A-8XYR3Q/$FILE/Peter-paul-rubens-the-battle-of-the-amazons.Jpg" target="_blank">The Batle of The Amazons de Peter Paul Rubens</a>
             </p>
         </div>
     </div>
