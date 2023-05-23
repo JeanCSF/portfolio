@@ -29,38 +29,16 @@ let header = `
 `;
 document.getElementById('header').innerHTML = header;
 
-window.onload = home();
-
-let footer = `
-    <div class="col-6 footer-socials">
-            <a href="https://wa.me/5511932094609" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-            <a class="mx-5" href="mailto:jean.csf.17@gmail.com" target="_blank"><i class="fa fa-envelope-circle-check"></i></a>
-            <a class="me-5" href="https://github.com/JeanCSF" target="_blank"><i class="fa-brands fa-github"></i></a>
-            <a class="me-5" href="https://www.linkedin.com/in/jean-carlos-6149a2232/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-    </div>
-    <div class="text-end col-6 footer-social-text">
-            <a class="link-light" href="https://facebook.com/fookinselfish" target="_blank">Facebook</a>
-            <a class="mx-3 link-light" href="https://twitter.com/JCS_16" target="_blank">Twitter</a>
-            <a class="me-3 link-light" href="https://instagram.com/fookinselfish" target="_blank">Instagram</a>
-            <a class="me-3 link-light" href="https://twitch.tv/c0ka0" target="_blank">Twitch</a>
-            <a class="me-3 link-light" href="https://www.youtube.com/channel/UCFaLrf0TN1DcKS0pUcb7Zzw" target="_blank">Youtube</a>
-            <a class="me-3 link-light" href="https://soundcloud.com/fookinselfish" target="_blank">Soundcloud</a>
-    </div>
-        <div class="text-center">
-            <p class="fw-bold">JeanCSF&copy; <span id="yearSpan"></span></p>
-        </div>
-`;
-document.getElementById('footer').innerHTML = footer;
-
 function home(){
-    main = `
-    <div class="row">
-    
-    <div class="col-lg-8 col-sm-auto col-md-auto offset-lg-2 offset-sm-auto offset-md-auto">
+    let main = `
+    <div class="col-8 offset-2">
         <h1 class="text-center fw-bold">Home</h1>
         <hr>
-        <div class="home-content ms-2">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam blanditiis fugiat eaque
+    </div>
+    <div class="row">
+        <div class="col-lg-8 col-sm-auto col-md-auto offset-lg-2 offset-sm-auto offset-md-auto home-content">
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam blanditiis fugiat eaque
                 doloremque possimus voluptatum, quas iure dolores. At praesentium incidunt aliquam cupiditate
                 laborum expedita optio reiciendis a omnis cumque.
                 Quas ipsam modi, quidem asperiores perferendis rem explicabo maiores exercitationem eveniet.
@@ -84,16 +62,35 @@ function home(){
                 fuga in voluptatem eaque.
                 Similique bes nisi quos dolores. Hic aut architecto veniam non exercitationem. Assumenda
                 quibusdam debitis atque esse? Repellat suscipit ipsam veniam tempora voluptatum rerum, magni
-                maiores aliquid praesentium molestias eaque pariatur!</p>
+                maiores aliquid praesentium molestias eaque pariatur!
+            </p>
         </div>
-    </div>
-    <div class="col-1">
-        
-    </div>
     </div>
     `;
     document.getElementById('content').innerHTML = main;
 }
+window.onload = home();
+
+let footer = `
+    <div class="col-6 col-sm-auto col-md-auto footer-socials">
+            <a class="me-5 link-light" href="https://wa.me/5511932094609" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            <a class="me-5 link-light" href="mailto:jean.csf.17@gmail.com" target="_blank"><i class="fa fa-envelope-circle-check"></i></a>
+            <a class="me-5 link-light" href="https://github.com/JeanCSF" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a class="me-5 link-light" href="https://www.linkedin.com/in/jean-carlos-6149a2232/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+    <div class="text-end col-6 col-sm-auto col-md-auto footer-social-text">
+            <a class="me-3 link-light" href="https://facebook.com/fookinselfish" target="_blank">Facebook</a>
+            <a class="me-3 link-light" href="https://twitter.com/JCS_16" target="_blank">Twitter</a>
+            <a class="me-3 link-light" href="https://instagram.com/fookinselfish" target="_blank">Instagram</a>
+            <a class="me-3 link-light" href="https://twitch.tv/c0ka0" target="_blank">Twitch</a>
+            <a class="me-3 link-light" href="https://www.youtube.com/channel/UCFaLrf0TN1DcKS0pUcb7Zzw" target="_blank">Youtube</a>
+            <a class="me-3 link-light" href="https://soundcloud.com/fookinselfish" target="_blank">Soundcloud</a>
+    </div>
+        <div class="text-center">
+            <p class="fw-bold">JeanCSF&copy; <span id="yearSpan"></span></p>
+        </div>
+`;
+document.getElementById('footer').innerHTML = footer;
 
 function projects(){
     let main = `
@@ -102,7 +99,7 @@ function projects(){
             <hr>
         </div>
         <div class="row">
-            <div class="col-8 offset-2 home-content d-flex justify-content-between flex-column">
+            <div class="col-lg-8 col-sm-auto col-md-auto offset-lg-2 offset-sm-auto offset-md-auto home-content d-flex justify-content-between flex-column">
                 <img class="img-fluid rounded" src="${base_url}/assets/img/projects/loginci4/main-login.png"
                     alt="Main login screen">
                 <h3>Sistema de login</h3>
@@ -120,7 +117,7 @@ function projects(){
             </div>
         </div>
         <div class="row mt-5">
-            <div class="col-8 offset-2 home-content d-flex justify-content-between flex-column">
+            <div class="col-lg-8 col-sm-auto col-md-auto offset-lg-2 offset-sm-auto offset-md-auto home-content d-flex justify-content-between flex-column">
                 <img class="img-fluid rounded float-start" src="${base_url}/assets/img/projects/cronometer/main-cronometer.png"
                     alt="Main cronometer screen">
                 <h3>Cronômetro.js</h3>
@@ -135,7 +132,7 @@ function projects(){
             </div>
         </div>
         <div class="row mt-5">
-            <div class="col-8 offset-2 home-content d-flex justify-content-between flex-column">
+            <div class="col-lg-8 col-sm-auto col-md-auto offset-lg-2 offset-sm-auto offset-md-auto home-content d-flex justify-content-between flex-column">
                 <img class="img-fluid rounded" src="${base_url}/assets/img/projects/triangles/main-triangles.png"
                     alt="Main cronometer screen">
                 <h3>Calculo de triângulo</h3>
@@ -161,7 +158,7 @@ function about(){
         <hr>
     </div>
     <div class="row">
-        <div class="col-8 offset-2 home-content">
+        <div class="col-lg-8 col-sm-auto col-md-auto offset-lg-2 offset-sm-auto offset-md-auto home-content">
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia vero cupiditate in nemo eveniet blanditiis,
             voluptates ducimus veniam explicabo consequuntur similique illo a odit ut nam quo quod error eius?
             Quibusdam doloremque ratione quod explicabo et asperiores, quos ipsum suscipit sunt illum, modi mollitia
