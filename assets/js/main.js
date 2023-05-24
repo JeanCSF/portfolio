@@ -1,14 +1,12 @@
 var base_url = window.location.origin;
 if (base_url != 'http://127.0.0.1:5500') {
-    base_url += '/personal-site'
+    base_url += '/portfolio'
 }
 console.log(base_url);
 
-
-
 let header = `
         <nav class="navbar navbar-expand-sm navbar-dark">
-            <a href="javascript:home();" class="navbar-brand" role="button"><img src="${base_url}/assets/img/jean/JeanCSF.png" class="img-fluid rounded-circle opacity-50" width="84" alt="Logo"></a>
+            <a href="javascript:home();" class="navbar-brand" role="button"><span class="fs-1 fst-italic fw-bolder ms-1">CSF Inc.</span></a>
             <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
                 data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
                 aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
@@ -31,6 +29,7 @@ document.getElementById('header').innerHTML = header;
 
 function home() {
     let main = `
+    <a href="#" role="button" class="btnTop" id="btnTop" title="Topo" hidden></a>
     <div class="col-8 offset-2">
         <h1 class="text-center fw-bold">Home</h1>
         <hr>
@@ -54,7 +53,7 @@ function home() {
             <p>
                 As técnologias utilizadas aqui foram: HTML, responsável pelo "esqueleto" do site. CSS, para dar estilo aos elementos. JavaScript, para o 
                 carregamento das seções. <a class="link-light" href="https://getbootstrap.com/" target="_blank">Bootstrap</a>, sua classe de grid foi muito 
-                utilizada neste site para deixar tudo alinhado e principalmente deixar o site responsívo. <a class="link-light" href="https://fontawesome.com/" target="_blank">FontAwesome</a>, 
+                utilizada neste site para deixar tudo alinhado e principalmente deixá-lo responsívo. <a class="link-light" href="https://fontawesome.com/" target="_blank">FontAwesome</a>, 
                 foi utilizado para estilizar alguns dos icones da página.
             </p>
                 <p class="text-end mt-4">Imagem de fundo: <a class="link-light" href="https://artsdot.com/ADC/Art-ImgScreen-2.nsf/O/A-8XYR3Q/$FILE/Peter-paul-rubens-the-battle-of-the-amazons.Jpg" target="_blank">The Batle of The Amazons de Peter Paul Rubens</a></p>
@@ -64,7 +63,9 @@ function home() {
     `;
     document.getElementById('content').innerHTML = main;
 }
+
 window.onload = home();
+window.onscroll = function () { scrollFunction() };
 
 let footer = `
     <div class="col-6 col-sm-auto col-md-auto footer-socials">
@@ -89,6 +90,7 @@ document.getElementById('footer').innerHTML = footer;
 
 function projects() {
     let main = `
+    <a href="#" role="button" class="btnTop" id="btnTop" title="Topo" hidden></a>
     <div class="col-8 offset-2">
             <h1 class="text-center fw-bold">Projetos</h1>
             <hr>
@@ -148,6 +150,7 @@ function projects() {
 
 function about() {
     let main = `
+    <a href="#" role="button" class="btnTop" id="btnTop" title="Topo" hidden></a>
     <div class="col-8 offset-2">
         <h1 class="text-center fw-bold">Sobre</h1>
         <hr>
@@ -172,27 +175,36 @@ function about() {
             <p>
                 Tenho poucos hobbys, mas o principal com certeza é ouvir música, é algo que sempre estou fazendo meio que faz
                 parte de mim, também tenho grande apreço por pinturas e outros tipos de arte, também gosto bastante de jogar nas minhas
-                horas vagas!
+                horas vagas.
             </p>
     </div>
 </div>  
     `;
     document.getElementById('content').innerHTML = main
     document.getElementById('ageSpan').textContent = getAge('1997/01/05');
+
 }
 
 let year = new Date();
 document.getElementById('yearSpan').textContent = year.getFullYear();
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById('btnTop').removeAttribute('hidden');
+    } else {
+        document.getElementById('btnTop').setAttribute('hidden', '')
+    }
+}
 
 function getAge(dateString) {
     const today = new Date();
     const birthDate = new Date(dateString);
     let age = today.getFullYear() - birthDate.getFullYear();
     const m = today.getMonth() - birthDate.getMonth();
-    
+
     if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
         age--;
     }
-    
+
     return age;
 }
