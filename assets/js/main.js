@@ -6,7 +6,7 @@ console.log(base_url);
 
 let header = `
         <nav class="navbar navbar-expand-sm navbar-dark">
-            <a href="javascript:home();" class="navbar-brand" role="button"><span class="fs-1 fst-italic fw-bolder ms-1">CSF Inc.</span></a>
+            <a href="javascript:home();" class="navbar-brand" role="button"><span class="fs-1 fst-italic fw-bolder ms-1">CSF</span></a>
             <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
                 data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
                 aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
@@ -30,7 +30,7 @@ document.getElementById('header').innerHTML = header;
 function home() {
     let main = `
     <a href="#" role="button" class="btnTop" id="btnTop" title="Topo" hidden></a>
-    <div class="col-8 offset-2">
+    <div class="col-8 offset-2 mt-2">
         <h1 class="text-center fw-bold">Home</h1>
         <hr>
     </div>
@@ -74,14 +74,6 @@ let footer = `
             <a class="me-5 link-light" href="https://github.com/JeanCSF" target="_blank"><i class="fa-brands fa-github"></i></a>
             <a class="me-5 link-light" href="https://www.linkedin.com/in/jean-carlos-6149a2232/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
     </div>
-    <div class="text-end col-6 col-sm-auto col-md-auto footer-social-text">
-            <a class="me-3 link-light" href="https://facebook.com/fookinselfish" target="_blank">Facebook</a>
-            <a class="me-3 link-light" href="https://twitter.com/JCS_16" target="_blank">Twitter</a>
-            <a class="me-3 link-light" href="https://instagram.com/fookinselfish" target="_blank">Instagram</a>
-            <a class="me-3 link-light" href="https://twitch.tv/c0ka0" target="_blank">Twitch</a>
-            <a class="me-3 link-light" href="https://www.youtube.com/channel/UCFaLrf0TN1DcKS0pUcb7Zzw" target="_blank">Youtube</a>
-            <a class="me-3 link-light" href="https://soundcloud.com/fookinselfish" target="_blank">Soundcloud</a>
-    </div>
         <div class="text-center">
             <p class="fw-bold">JeanCSF&copy; <span id="yearSpan"></span></p>
         </div>
@@ -91,7 +83,7 @@ document.getElementById('footer').innerHTML = footer;
 function projects() {
     let main = `
     <a href="#" role="button" class="btnTop" id="btnTop" title="Topo" hidden></a>
-    <div class="col-8 offset-2">
+    <div class="col-8 offset-2 mt-2">
             <h1 class="text-center fw-bold">Projetos</h1>
             <hr>
         </div>
@@ -151,7 +143,7 @@ function projects() {
 function about() {
     let main = `
     <a href="#" role="button" class="btnTop" id="btnTop" title="Topo" hidden></a>
-    <div class="col-8 offset-2">
+    <div class="col-8 offset-2 mt-3">
         <h1 class="text-center fw-bold">Sobre</h1>
         <hr>
     </div>

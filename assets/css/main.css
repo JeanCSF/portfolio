@@ -26,7 +26,6 @@ body {
     padding: 0.8em;
     backdrop-filter: blur(9.8px);
     -webkit-backdrop-filter: blur(9.8px);
-    height: fit-content;
 }
 
 .home-content img {
