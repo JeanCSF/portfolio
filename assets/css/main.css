@@ -2,23 +2,37 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: all 0.30s ease-out;
 }
 
 body,
 html {
-    height: 100%;
+    height: auto;
 }
 
 body {
+    background: rgba(0, 0, 0, 0.712);
+    position: absolute;
     display: flex;
     flex-direction: column;
-    background-image: url('../img/background.jfif');
-    background-repeat: repeat-y;
+    overflow-x: hidden;
+}
+
+body:before {
+    content: "";
+    position: absolute;
+    background: url('../img/background.png');
     background-size: cover;
+    z-index: -1; /* Keep the background behind the content */
+    height: 20%; width: 35%; /* Using Glen Maddern's trick /via @mente */    /* don't forget to use the prefixes you need */
+    transform: scale(5);
+    transform-origin: top left;
+    filter: blur(0.8px);
 }
 
 .content {
     flex: 1 0 auto;
+    margin-top: 120px;
 }
 
 .home-content {
@@ -26,19 +40,24 @@ body {
     padding: 0.8em;
     backdrop-filter: blur(9.8px);
     -webkit-backdrop-filter: blur(9.8px);
+    height: 100%;
 }
 
 .home-content img {
-    width: 350px;
+    width: 250px;
 }
 
-.home-content img:hover {
-    transition: transform 1.5s ease;
-    transform: scale(1.3);
-}
 
 .home-content p {
     text-align: justify;
+}
+
+#about {
+    margin-bottom: 250px;
+}
+
+#projects {
+    margin-top: 356px;
 }
 
 .footer {
@@ -70,9 +89,6 @@ body {
     color: white;
 }
 
-.home-content {
-    text-align: justify;
-}
 
 .card:hover {
     transition: transform .5s ease;
@@ -97,7 +113,7 @@ body {
     justify-content: center;
     align-items: center;
     position: fixed;
-    bottom: 10px;
+    bottom: 83px;
     right: 10px;
     width: 50px;
     height: 50px;
@@ -107,6 +123,7 @@ body {
     text-decoration: none;
     z-index: 999;
 }
+
 .btnTop::after {
     content: "↑";
     font-size: 32px;
@@ -114,6 +131,41 @@ body {
     color: aliceblue;
     transition: margin-top 250ms;
 }
+
 .btnTop:hover::after {
-    margin-top:-8px;
+    margin-top: -8px;
+}
+
+.btnNext {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 83px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.712);
+    backdrop-filter: blur(9.8px);
+    -webkit-backdrop-filter: blur(9.8px);
+    text-decoration: none;
+    z-index: 999;
+}
+
+.btnNext::after {
+    content: "↓";
+    font-size: 32px;
+    font-weight: bold;
+    color: aliceblue;
+    transition: all ease-in;
+}
+
+.btnNext:hover::after {
+    margin-bottom: -8px;
+}
+
+.contact input {
+    background: rgba(0, 0, 0, 0.712);
+    backdrop-filter: blur(9.8px);
+    -webkit-backdrop-filter: blur(9.8px);
 }

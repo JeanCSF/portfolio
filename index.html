@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>CSF Inc.</title>
+    <title>CSF</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" href="assets/img/jean/JeanCSF-rounded.png" sizes="128x128">
@@ -11,21 +11,185 @@
 </head>
 
 <body>
-    <header id="header" class="footer fixed-top">
+    <header id="header" class="sticky-top footer">
         <script defer src="assets/js/main.js"></script>
+        <nav class="navbar navbar-expand-sm navbar-dark">
+            <a href="#" class="navbar-brand" role="button"><span class="fs-1 fst-italic fw-bolder ms-1">CSF</span></a>
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+            <div class="collapse navbar-collapse text-center" id="collapsibleNavId">
+                <ul class="navbar-nav me-auto mt-lg-0 fs-4">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link mx-2" role="button" aria-current="page">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#projects" class="nav-link mx-2" role="button">Projetos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link mx-2" role="button">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link mx-2" role="button">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
-    <main id="content" class="content container-fluid p-5 mt-5">
+    <main id="content" class="content container-fluid mb-5">
+        <a href="#" role="button" class="btnTop" id="btnTop" title="Topo" hidden></a>
+        <section class="row">
+            <div class="bg-image"></div>
+            <div
+                class="text-center col-lg-8 col-sm-auto col-md-auto offset-lg-2 offset-sm-auto offset-md-auto home-content">
+                <h2 class="">JEAN CARLOS</h2>
+                <hr>
+                <h4 class="fst-italic">Full Stack Web Developer</h4>
+                <a role="button" href="#contact" class="mt-5 btn btn-lg btn-outline-dark">Fale Comigo</a>
+            </div>
+        </section>
+        <article>
+            <section id="projects">
+                <div class="col-8 offset-2 mt-2">
+                    <h1 class="text-end fw-bolder">PROJETOS</h1>
+                    <hr>
+                </div>
+                <div class="row">
+                    <div
+                        class="col-lg-8 col-sm-auto col-md-auto offset-lg-2 offset-sm-auto offset-md-auto home-content d-flex justify-content-between flex-column">
+                        <img class="img-fluid rounded" src="/assets/img/projects/loginci4/main-login.png"
+                            alt="Main login screen">
+                        <h3>Sistema de login</h3>
+                        <hr>
+                        <h5>Autenticação de usuário desenvolvida na framework CodeIgniter4(PHP)</h5>
+                        <p>Sistema efetua o cadastro do usuário interessado, as senhas são armazenadas encriptografadas
+                            para maior segurança. Apos concluir a etapa de cadastro o usuário é orientado a checar seu e-mail para 
+                            confirma-lo e ativar sua conta, ao efetuar o login de fato o sistema checa se as credenciais 
+                            digitadas estão corretas e se a conta já foi ativada(via e-mail de ativação),
+                            o usuário só irá ter acesso se as credenciais estiverem corretas e a conta estiver ativa.
+                        </p>
+                        <p class="text-end"><a href="https://www.youtube.com/channel/UCFaLrf0TN1DcKS0pUcb7Zzw"
+                                class="text-muted" target="_blank">Link para playlist no meu canal</a></p>
+                        <div class="mt-5 text-end">
+                            <a href="https://github.com/JeanCSF/loginCI4" target="_blank"
+                                class="text-muted">Repositório</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div
+                        class="col-lg-8 col-sm-auto col-md-auto offset-lg-2 offset-sm-auto offset-md-auto home-content">
+                        <img class="img-fluid rounded" src="/assets/img/projects/triangles/main-triangles.png"
+                            alt="Main cronometer screen">
+                        <h3>Calculo de triângulo</h3>
+                        <hr>
+                        <h5>Aplicação desenvolvida em PHP que calcula os lados de um triângulo</h5>
+                        <p>O Usuário digita os lados do triângulo e clica em calcular em seguida a aplicação retorna
+                            para ele que tipo de triângulo é aquele, e caso não seja possível formar um triângulo com as medidas
+                            fornecidas o usuário é informado.</p>
+                        <div class="mt-5 text-end">
+                            <a href="https://github.com/JeanCSF/A2ProgramacaoWeb-Triangulos" target="_blank"
+                                class="text-muted">Repositório</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+
+        <article>
+            <section id="about" class="mt-5">
+                <div class="col-8 offset-2 mt-5">
+                    <h1 class="text-end fw-bolder">SOBRE MIM</h1>
+                    <hr>
+                </div>
+                <div class="col-lg-8 col-sm-auto col-md-auto offset-lg-2 offset-sm-auto offset-md-auto home-content">
+                    <h4>Olá, me chamo Jean Carlos</h4>
+                    <p>
+                        Atualmente tenho <span id="ageSpan"></span> anos, estou cursando Análise e Desenvolvimento de
+                        Sistemas na UNICID do Tatuapé, estou partindo para o último semestre. Estou vindo de uma transição de
+                        carreira, anteriormente trabalhava com vendas no setor de varejo e atualmente sou estagiário em
+                        desenvolvimento pelo CRF-SP, mas meu contrato está perto de acabar e aqui eles não efetivam, então estou a
+                        procura de novas oportunidades se for o caso pode entra em contato comigo.
+                    </p>
+                    <p>
+                        Um dos meus maiores pontos fortes creio que seja a assimilação, quando se trata de aprender algo
+                        novo sempre tenho certa facilidade para captar as informações, habilidade essa que vem ficando cada
+                        vez melhor com o passar dos anos. E falando de pontos fracos, o principal seria a comunicação, mas de fato
+                        é algo que têm melhorado ultimamente. Também sou muito persistente, quando me deparo com um problema 
+                        eu sempre tento todas as formas de resolve-lo ao invés de ignorar.
+                    </p>
+                    <p>
+                        Tenho poucos hobbys, mas o principal com certeza é ouvir música, é algo que sempre estou fazendo
+                        meio que faz
+                        parte de mim, também tenho grande apreço por pinturas e outros tipos de arte, também gosto
+                        bastante de jogar nas minhas horas vagas.
+                    </p>
+                </div>
+            </section>
+        </article>
+
+        <article>
+            <section id="contact">
+                <div class="col-lg-8 col-sm-auto col-md-auto offset-lg-2 offset-md-auto offset-sm-auto">
+                    <h1 class="text-end fw-bolder">CONTATO</h1>
+                    <hr>
+                </div>
+                <div class="col-lg-8 col-sm-auto col-md-auto offset-lg-2 offset-md-auto offset-sm-auto home-content">
+                    <form onsubmit="sendEmail(); reset(); return false;" class="contact p-3">
+                        <div class="col-lg-6 col-sm-auto col-md-auto offset-lg-3 offset-md-auto offset-sm-auto">
+                            <div class="row form-floating mb-3">
+                                <input type="text" name="name" id="name" class="form-control" placeholder="Nome" required>
+                                <label for="name">Nome<span class="text-danger"> *</span></label>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-auto col-md-auto offset-lg-3 offset-md-auto offset-sm-auto">
+                            <div class="row form-floating mb-3">
+                                <input type="email" name="email" id="email" class="form-control" placeholder="Email" required>
+                                <label for="email">Email <span class="text-danger"> *</span></label>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-auto col-md-auto offset-lg-3 offset-md-auto offset-sm-auto">
+                            <div class="row form-floating mb-3">
+                                <input type="text" name="phone" id="fone" class="form-control" placeholder="Telefone">
+                                <label for="phone">Telefone</label>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-auto col-md-auto offset-lg-3 offset-md-auto offset-sm-auto">
+                            <div class="row mb-3">
+                                <textarea class="form-control" name="contactMsg" id="contactMsg" cols="30" rows="10"
+                                    placeholder="Mensagem" style="background-color: rgba(0, 0, 0, 0.712);"></textarea>
+                            </div>
+                        </div>
+                        <div
+                            class="col-lg-6 col-sm-auto col-md-auto offset-lg-3 offset-md-auto offset-sm-auto text-end">
+                            <button type="submit" class="btn btn-lg btn-outline-primary"> Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </article>
     </main>
 
-    <footer id="footer" class="footer row d-flex justify-content-end">
+    <footer id="footer" class="footer row d-flex justify-content-end fixed-bottom">
+        <div class="col-6 col-sm-auto col-md-auto footer-socials">
+            <a class="me-2 link-light" href="https://wa.me/5511932094609" target="_blank"><i
+                    class="fa-brands fa-whatsapp"></i></a>
+            <a class="me-2 link-light" href="https://github.com/JeanCSF" target="_blank"><i
+                    class="fa-brands fa-github"></i></a>
+            <a class="me-2 link-light" href="https://www.linkedin.com/in/jean-carlos-6149a2232/" target="_blank"><i
+                    class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <div class="text-center">
+            <p class="fw-bold">JeanCSF&copy; <span id="yearSpan"></span></p>
+        </div>
     </footer>
 
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/font-awesome-all.min.js"></script>
+    <script src="assets/js/smtp.js"></script>
 </body>
 
 </html>
-
