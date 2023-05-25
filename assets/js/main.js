@@ -32,7 +32,7 @@ function scrollFunction() {
         document.getElementById('btnTop').removeAttribute('hidden');
         document.getElementById('footer').classList.remove('fixed-bottom');
     } else {
-        document.getElementById('btnTop').setAttribute('hidden', '')
+        document.getElementById('btnTop').setAttribute('hidden', '');
         document.getElementById('footer').classList.add('fixed-bottom');
 
     }

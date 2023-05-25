@@ -136,36 +136,13 @@ body:before {
     margin-top: -8px;
 }
 
-.btnNext {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    bottom: 83px;
-    right: 10px;
-    width: 50px;
-    height: 50px;
-    background: rgba(0, 0, 0, 0.712);
-    backdrop-filter: blur(9.8px);
-    -webkit-backdrop-filter: blur(9.8px);
-    text-decoration: none;
-    z-index: 999;
-}
-
-.btnNext::after {
-    content: "↓";
-    font-size: 32px;
-    font-weight: bold;
-    color: aliceblue;
-    transition: all ease-in;
-}
-
-.btnNext:hover::after {
-    margin-bottom: -8px;
-}
 
 .contact input {
     background: rgba(0, 0, 0, 0.712);
     backdrop-filter: blur(9.8px);
     -webkit-backdrop-filter: blur(9.8px);
+}
+
+article {
+    margin-top: 350px;
 }
