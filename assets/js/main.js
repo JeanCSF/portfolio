@@ -15,7 +15,7 @@ function sendEmail() {
         Host: "smtp.gmail.com",
         Username: "emailt104@gmail.com",
         Password: "wfieldkgarmiynyw",
-        To: 'jean.csf.17@gmai.com',
+        To: 'jean.csf.17@gmail.com',
         From: document.getElementById('email').value,
         Subject: "Novo Contato - Portifólio",
         Body: "Nome: " + document.getElementById('name').value
