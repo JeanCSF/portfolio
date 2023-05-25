@@ -31,11 +31,9 @@ function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         document.getElementById('btnTop').removeAttribute('hidden');
         document.getElementById('footer').classList.remove('fixed-bottom');
-        document.getElementById('body').classList.remove('overflow');
     } else {
         document.getElementById('btnTop').setAttribute('hidden', '')
         document.getElementById('footer').classList.add('fixed-bottom');
-        document.getElementById('body').classList.add('overflow');
 
     }
 }
