@@ -66,10 +66,10 @@
                             o usuário só irá ter acesso se as credenciais estiverem corretas e a conta estiver ativa.
                         </p>
                         <p class="text-end"><a href="https://www.youtube.com/channel/UCFaLrf0TN1DcKS0pUcb7Zzw"
-                                class="link-light" target="_blank">Link para playlist no meu canal</a></p>
+                                class="text-white" target="_blank">Link para playlist no meu canal</a></p>
                         <div class="mt-5 text-end">
                             <a href="https://github.com/JeanCSF/loginCI4" target="_blank"
-                                class="link-light">Repositório</a>
+                                class="text-white">Repositório</a>
                         </div>
                     </div>
                     <div class="col-lg-8 col-sm-auto col-md-auto offset-lg-2 offset-sm-auto offset-md-auto home-content mt-5">
@@ -83,7 +83,7 @@
                             fornecidas o usuário é informado.</p>
                         <div class="mt-5 text-end">
                             <a href="https://github.com/JeanCSF/A2ProgramacaoWeb-Triangulos" target="_blank"
-                                class="link-light">Repositório</a>
+                                class="text-white">Repositório</a>
                         </div>
                     </div>
             </section>
@@ -132,25 +132,27 @@
                         <div class="col-lg-6 col-sm-auto col-md-auto offset-lg-3 offset-md-auto offset-sm-auto">
                             <div class="row form-floating mb-3">
                                 <input type="text" name="name" id="name" class="form-control" placeholder="Nome" required>
-                                <label for="name">Nome<span class="text-danger"> *</span></label>
+                                <label for="name" class="text-white">Nome<span class="text-danger"> *</span></label>
                             </div>
                         </div>
                         <div class="col-lg-6 col-sm-auto col-md-auto offset-lg-3 offset-md-auto offset-sm-auto">
                             <div class="row form-floating mb-3">
                                 <input type="email" name="email" id="email" class="form-control" placeholder="Email" required>
-                                <label for="email">Email <span class="text-danger"> *</span></label>
+                                <label for="email" class="text-white">Email <span class="text-danger"> *</span></label>
                             </div>
                         </div>
                         <div class="col-lg-6 col-sm-auto col-md-auto offset-lg-3 offset-md-auto offset-sm-auto">
                             <div class="row form-floating mb-3">
                                 <input type="text" name="phone" id="fone" class="form-control" placeholder="Telefone">
-                                <label for="phone">Telefone</label>
+                                <label for="phone" class="text-white">Telefone</label>
                             </div>
                         </div>
                         <div class="col-lg-6 col-sm-auto col-md-auto offset-lg-3 offset-md-auto offset-sm-auto">
-                            <div class="row mb-3">
-                                <textarea class="form-control" name="contactMsg" id="contactMsg" cols="30" rows="10"
-                                    placeholder="Mensagem" style="background-color: rgba(255, 255, 255, 0.1);"></textarea>
+                            <div class="row form-floating mb-3">
+                                <textarea class="form-control" name="contactMsg" id="contactMsg"
+                                    placeholder="Mensagem" style="background-color: rgba(255, 255, 255, 0); border: none;backdrop-filter: blur(9.8px);
+                                    -webkit-backdrop-filter: blur(9.8px); height: 200px;" required></textarea>
+                                    <label for="phone" class="text-white">Mensagem <span class="text-danger"> *</span></label>
                             </div>
                         </div>
                         <div
