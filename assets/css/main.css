@@ -10,7 +10,7 @@
 body,
 html {
     height: auto;
-    
+
 }
 
 body {
@@ -26,8 +26,12 @@ body:before {
     position: absolute;
     background: url('../img/background.png');
     background-size: cover;
-    z-index: -1; /* Keep the background behind the content */
-    height: 20%; width: 35%; /* Using Glen Maddern's trick /via @mente */    /* don't forget to use the prefixes you need */
+    z-index: -1;
+    /* Keep the background behind the content */
+    height: 20%;
+    width: 35%;
+    /* Using Glen Maddern's trick /via @mente */
+    /* don't forget to use the prefixes you need */
     transform: scale(5);
     transform-origin: top left;
     filter: blur(0.8px);
@@ -39,10 +43,11 @@ body:before {
 }
 
 .home-content {
-    background: rgba(255, 255, 255, 0.494);
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 50px 8px 32px 50px rgba(31, 38, 135, 0.37);
     padding: 0.9em;
-    backdrop-filter: blur(9.8px);
-    -webkit-backdrop-filter: blur(9.8px);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     height: 100%;
 }
 
@@ -61,8 +66,8 @@ body:before {
     background: rgba(47, 36, 186, 0.03);
     backdrop-filter: blur(9.8px);
     -webkit-backdrop-filter: blur(9.8px);
+    text-align: center;
     margin: 0;
-    /* width: 100%; */
 }
 
 .footer-socials {
@@ -109,11 +114,53 @@ body:before {
 
 
 .contact input {
-    background: rgba(0, 0, 0, 0.712);
+    background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(9.8px);
     -webkit-backdrop-filter: blur(9.8px);
 }
 
 section {
     margin-top: 350px;
+}
+
+#landing {
+    color: #FFF;
+    transition: all 0.5s;
+    position: relative;
+}
+
+.btn-two::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition: all 0.5s;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+#landing::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition: all 0.5s;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+#landing:hover::before {
+    transform: rotate(-45deg);
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#landing:hover::after {
+    transform: rotate(45deg);
+    background-color: rgba(255, 255, 255, 0);
 }
