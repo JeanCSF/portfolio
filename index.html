@@ -5,13 +5,15 @@
     <title>CSF</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, minimum-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Jean Carlos's portfolio site">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="icon" href="assets/img/jean/CSF.png" sizes="128x128">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
 <body>
-    <header id="header" class="footer">
+    <header id="header" class="footer sticky-top">
         <script defer src="assets/js/main.js"></script>
         <nav class="navbar navbar-expand-sm navbar-dark">
             <a href="#" class="navbar-brand" role="button"><span class="fs-1 fst-italic fw-bolder ms-1">CSF</span></a>
@@ -32,6 +34,9 @@
                     <li class="nav-item">
                         <a href="#contact" class="nav-link mx-2" role="button">Contato</a>
                     </li>
+                    <li class="nav-item">
+                        <a href="/assets/" class="nav-link mx-2" role="button" download="Profile.pdf">Currículo</a>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -39,137 +44,180 @@
 
     <main id="content" class="content container-fluid mb-5">
         <a href="#" role="button" class="btnTop" id="btnTop" title="Topo" hidden></a>
-        <section class="row">
-            <div id="landing" class="text-center col-lg-8 col-sm-auto col-md-auto offset-lg-2 offset-sm-auto offset-md-auto">
-                <h2 class="">JEAN CARLOS</h2>
+        <section>
+            <div id="landing"
+                class="text-center col-lg-8 col-sm-auto col-md-auto offset-lg-2 offset-sm-auto offset-md-auto">
+                <p class="fs-2">JEAN CARLOS</p>
                 <hr>
-                <h4 class="fst-italic">Full Stack Web Developer</h4>
+                <p class="fst-italic fs-4">Full Stack Web Developer</p>
                 <a role="button" href="#contact" class="mx-5 btn btn-lg btn-outline-light">Fale Comigo</a>
             </div>
         </section>
-        <article>
-            <section id="projects">
-                <div class="col-lg-8 col-sm-auto col-md-auto offset-lg-2 offset-sm-auto offset-md-auto">
-                    <h1 class="text-end fw-bolder">PROJETOS</h1>
-                    <hr>
+
+        <section id="projects">
+            <div class="col-lg-8 col-sm-auto col-md-auto offset-lg-2 offset-sm-auto offset-md-auto">
+                <h1 class="text-end fw-bolder">PROJETOS</h1>
+                <hr>
+            </div>
+            <div class="col-lg-8 col-sm-auto col-md-auto offset-lg-2 offset-sm-auto offset-md-auto home-content">
+                <img class="img-fluid rounded" src="assets/img/projects/portfolio/main-portfolio.webp"
+                    alt="Main login screen">
+                <p class="fs-3">Portifólio</p>
+                <hr>
+                <p class="fs-5">Meu portifólio pessoal</p>
+                <p class="mb-5">
+                    Site desenvolvido com o propósito de por em prática os meus conhecimentos em front-end e também exibir
+                    os meus principais projetos para que tanto eu quanto os visitantes possam acompanhar minha evolução.
+                </p>
+                <p class="my-5">Tecnologias utilizadas:
+                    <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="_blank"rel="noopener noreferrer"><i class="fa-brands fa-html5 fs-3 ms-2 text-white" title="HTML5"></i></a>
+                    <a href="https://www.w3.org/TR/CSS/#css" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-css3-alt fs-3 ms-2 text-white" title="CSS3"></i></a>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-js fs-3 ms-2 text-white" title="JavaScript"></i></a>
+                    <a href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-bootstrap fs-3 ms-2 text-white" title="Bootstrap"></i></a>
+                    <a href="https://fontawesome.com/" target="_blank" rel="noopener noreferrer"><i class="fa fa-font-awesome fs-3 ms-2 text-white" title="FontAwesome"></i></a>
+                </p>
+                <div class="mt-5 text-end">
+                    <a href="https://github.com/JeanCSF/portfolio" target="_blank" class="text-white">Repositório</a>
                 </div>
-                    <div class="col-lg-8 col-sm-auto col-md-auto offset-lg-2 offset-sm-auto offset-md-auto home-content d-flex justify-content-between flex-column">
-                        <img class="img-fluid rounded" src="assets/img/projects/loginci4/main-login.png"
-                            alt="Main login screen">
-                        <h3>Sistema de login</h3>
-                        <hr>
-                        <h5>Autenticação de usuário desenvolvida na framework CodeIgniter4(PHP)</h5>
-                        <p>Sistema efetua o cadastro do usuário interessado, as senhas são armazenadas encriptografadas
-                            para maior segurança. Apos concluir a etapa de cadastro o usuário é orientado a checar seu e-mail para 
-                            confirma-lo e ativar sua conta, ao efetuar o login de fato o sistema checa se as credenciais 
-                            digitadas estão corretas e se a conta já foi ativada(via e-mail de ativação),
-                            o usuário só irá ter acesso se as credenciais estiverem corretas e a conta estiver ativa.
-                        </p>
-                        <p class="text-end"><a href="https://www.youtube.com/channel/UCFaLrf0TN1DcKS0pUcb7Zzw"
-                                class="text-white" target="_blank">Link para playlist no meu canal</a></p>
-                        <div class="mt-5 text-end">
-                            <a href="https://github.com/JeanCSF/loginCI4" target="_blank"
-                                class="text-white">Repositório</a>
+            </div>
+            <div class="col-lg-8 col-sm-auto col-md-auto offset-lg-2 offset-sm-auto offset-md-auto home-content mt-5">
+                <img class="img-fluid rounded" src="assets/img/projects/loginci4/main-login.webp"
+                    alt="Main login screen">
+                <p class="fs-3">Sistema de login</p>
+                <hr>
+                <p class="fs-5">Autenticação de usuário desenvolvida na framework CodeIgniter4(PHP)</p>
+                <p>Sistema efetua o cadastro do usuário interessado, as senhas são armazenadas encriptografadas
+                    para maior segurança. Apos concluir a etapa de cadastro o usuário é orientado a checar seu e-mail
+                    para
+                    confirma-lo e ativar sua conta, ao efetuar o login de fato o sistema checa se as credenciais
+                    digitadas estão corretas e se a conta já foi ativada(via e-mail de ativação),
+                    o usuário só irá ter acesso se as credenciais estiverem corretas e a conta estiver ativa.
+                </p>
+                <p class="mt-5">Tecnologias utilizadas:
+                    <a href="https://www.codeigniter.com/" target="_blank" rel="noreferrer"><i class="fa fa-fire-flame-curved fs-3 text-white" title="CodeIgniter4"></i></a> 
+                    <a href="https://www.php.net/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-php fs-3 ms-2 text-white" title="PHP"></i></a>
+                    <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"><i class="fa fa-database fs-3 ms-2 text-white" title="MySQL"></i></a>
+                    <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="_blank"rel="noopener noreferrer"><i class="fa-brands fa-html5 fs-3 ms-2 text-white" title="HTML5"></i></a>
+                    <a href="https://www.w3.org/TR/CSS/#css" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-css3-alt fs-3 ms-2 text-white" title="CSS3"></i></a>
+                    <a href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-bootstrap fs-3 ms-2 text-white" title="Bootstrap"></i></a>
+                    <a href="https://fontawesome.com/" target="_blank" rel="noopener noreferrer"><i class="fa fa-font-awesome fs-3 ms-2 text-white" title="FontAwesome"></i></a>
+                </p>
+                <p class="text-end"><a href="https://www.youtube.com/channel/UCFaLrf0TN1DcKS0pUcb7Zzw"
+                        class="text-white" target="_blank">Link para playlist no meu canal</a></p>
+                <div class="mt-5 text-end">
+                    <a href="https://github.com/JeanCSF/loginCI4" target="_blank" class="text-white">Repositório</a>
+                </div>
+            </div>
+            <div class="col-lg-8 col-sm-auto col-md-auto offset-lg-2 offset-sm-auto offset-md-auto home-content mt-5">
+                <img class="img-fluid rounded" src="assets/img/projects/triangles/main-triangles.webp"
+                    alt="Main cronometer screen">
+                <p class="fs-3">Calculo de triângulo</p>
+                <hr>
+                <p class="fs-5">Aplicação desenvolvida em PHP que calcula os lados de um triângulo</p>
+                <p>O Usuário digita os lados do triângulo e clica em calcular em seguida a aplicação retorna
+                    para ele que tipo de triângulo é aquele, e caso não seja possível formar um triângulo com as medidas
+                    fornecidas o usuário é informado.</p>
+                <p class="mt-5">Tecnologias utilizadas: 
+                    <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="_blank"rel="noopener noreferrer"><i class="fa-brands fa-html5 fs-3 text-white" title="HTML5"></i></a>
+                    <a href="https://www.w3.org/TR/CSS/#css" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-css3-alt fs-3 ms-2 text-white" title="CSS3"></i></a>
+                    <a href="https://www.php.net/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-php fs-3 ms-2 text-white" title="PHP"></i></a>
+                </p>
+                <div class="mt-5 text-end">
+                    <a href="https://github.com/JeanCSF/A2ProgramacaoWeb-Triangulos" target="_blank"
+                        class="text-white">Repositório</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="col-lg-8 col-sm-auto col-md-auto offset-lg-2 offset-md-auto offset-sm-auto">
+                <h1 class="text-end fw-bolder">SOBRE MIM</h1>
+                <hr>
+            </div>
+            <div class="col-lg-8 col-sm-auto col-md-auto offset-lg-2 offset-sm-auto offset-md-auto home-content">
+                <p class="fs-4">Olá, me chamo Jean Carlos</p>
+                <p>
+                    Atualmente tenho <span id="ageSpan"></span> anos, estou cursando Análise e Desenvolvimento de
+                    Sistemas na UNICID do Tatuapé partindo para o último semestre. Venho de uma transição
+                    de carreira, anteriormente trabalhava com vendas no setor de varejo e atualmente sou estagiário de
+                    desenvolvimento pelo CRF-SP, mas meu contrato está perto de acabar e por norma a empresa não efetiva, 
+                    então sigo a procura de uma nova oportunidade se for o caso pode entra em contato comigo.
+                </p>
+                <p>
+                    Um dos meus maiores pontos fortes creio que seja a assimilação, quando se trata de aprender algo
+                    novo sempre tenho certa facilidade para captar as informações, habilidade essa que vem ficando cada
+                    vez melhor com o passar dos anos. E falando de pontos fracos, o principal seria a comunicação, mas
+                    de fato
+                    é algo que têm melhorado ultimamente. Também sou muito persistente, quando me deparo com um problema
+                    eu sempre tento todas as formas de resolve-lo ao invés de ignorar.
+                </p>
+                <p class="mt-5 fs-4">Tecnologias que utilizo no momento:</p>
+                <p>
+                    <a href="https://www.codeigniter.com/" target="_blank" rel="noreferrer"><i class="fa fa-fire-flame-curved fs-3 text-white" title="CodeIgniter4"></i></a> 
+                    <a href="https://www.php.net/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-php fs-3 ms-2 text-white" title="PHP"></i></a>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-js fs-3 ms-2 text-white" title="JavaScript"></i></a>
+                    <a href="https://react.dev/" target="_blank"rel="noopener noreferrer"><i class="fa-brands fa-react fs-3 ms-2 text-white" title="React"></i></a>
+                    <a href="https://nodejs.org/en" target="_blank"rel="noopener noreferrer"><i class="fa-brands fa-node-js fs-3 ms-2 text-white" title="NodeJS"></i></a>
+                    <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"><i class="fa fa-database fs-3 ms-2 text-white" title="MySQL"></i></a>
+                    <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="_blank"rel="noopener noreferrer"><i class="fa-brands fa-html5 fs-3 ms-2 text-white" title="HTML5"></i></a>
+                    <a href="https://www.w3.org/TR/CSS/#css" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-css3-alt fs-3 ms-2 text-white" title="CSS3"></i></a>
+                    <a href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-bootstrap fs-3 ms-2 text-white" title="Bootstrap"></i></a>
+                    <a href="https://fontawesome.com/" target="_blank" rel="noopener noreferrer"><i class="fa fa-font-awesome fs-3 ms-2 text-white" title="FontAwesome"></i></a>
+                </p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="col-lg-8 col-sm-auto col-md-auto offset-lg-2 offset-md-auto offset-sm-auto">
+                <h1 class="text-end fw-bolder">CONTATO</h1>
+                <hr>
+            </div>
+            <div class="col-lg-8 col-sm-auto col-md-auto offset-lg-2 offset-md-auto offset-sm-auto home-content">
+                <form onsubmit="sendEmail(); reset(); return false;" class="contact p-3">
+                    <div class="col-lg-6 col-sm-auto col-md-auto offset-lg-3 offset-md-auto offset-sm-auto">
+                        <div class="row form-floating mb-3">
+                            <input type="text" name="name" id="name" class="form-control" placeholder="Nome" required>
+                            <label for="name" class="text-white">Nome<span class="text-danger"> *</span></label>
                         </div>
                     </div>
-                    <div class="col-lg-8 col-sm-auto col-md-auto offset-lg-2 offset-sm-auto offset-md-auto home-content mt-5">
-                        <img class="img-fluid rounded" src="assets/img/projects/triangles/main-triangles.png"
-                            alt="Main cronometer screen">
-                        <h3>Calculo de triângulo</h3>
-                        <hr>
-                        <h5>Aplicação desenvolvida em PHP que calcula os lados de um triângulo</h5>
-                        <p>O Usuário digita os lados do triângulo e clica em calcular em seguida a aplicação retorna
-                            para ele que tipo de triângulo é aquele, e caso não seja possível formar um triângulo com as medidas
-                            fornecidas o usuário é informado.</p>
-                        <div class="mt-5 text-end">
-                            <a href="https://github.com/JeanCSF/A2ProgramacaoWeb-Triangulos" target="_blank"
-                                class="text-white">Repositório</a>
+                    <div class="col-lg-6 col-sm-auto col-md-auto offset-lg-3 offset-md-auto offset-sm-auto">
+                        <div class="row form-floating mb-3">
+                            <input type="email" name="email" id="email" class="form-control" placeholder="Email"
+                                required>
+                            <label for="email" class="text-white">Email <span class="text-danger"> *</span></label>
                         </div>
                     </div>
-            </section>
-        </article>
-
-        <article>
-            <section id="about">
-                <div class="col-lg-8 col-sm-auto col-md-auto offset-lg-2 offset-md-auto offset-sm-auto">
-                    <h1 class="text-end fw-bolder">SOBRE MIM</h1>
-                    <hr>
-                </div>
-                <div class="col-lg-8 col-sm-auto col-md-auto offset-lg-2 offset-sm-auto offset-md-auto home-content">
-                    <h4>Olá, me chamo Jean Carlos</h4>
-                    <p>
-                        Atualmente tenho <span id="ageSpan"></span> anos, estou cursando Análise e Desenvolvimento de
-                        Sistemas na UNICID do Tatuapé, estou partindo para o último semestre. Estou vindo de uma transição de
-                        carreira, anteriormente trabalhava com vendas no setor de varejo e atualmente sou estagiário em
-                        desenvolvimento pelo CRF-SP, mas meu contrato está perto de acabar e aqui eles não efetivam, então estou a
-                        procura de novas oportunidades se for o caso pode entra em contato comigo.
-                    </p>
-                    <p>
-                        Um dos meus maiores pontos fortes creio que seja a assimilação, quando se trata de aprender algo
-                        novo sempre tenho certa facilidade para captar as informações, habilidade essa que vem ficando cada
-                        vez melhor com o passar dos anos. E falando de pontos fracos, o principal seria a comunicação, mas de fato
-                        é algo que têm melhorado ultimamente. Também sou muito persistente, quando me deparo com um problema 
-                        eu sempre tento todas as formas de resolve-lo ao invés de ignorar.
-                    </p>
-                    <p>
-                        Tenho poucos hobbys, mas o principal com certeza é ouvir música, é algo que sempre estou fazendo
-                        meio que faz
-                        parte de mim, também tenho grande apreço por pinturas e outros tipos de arte, também gosto
-                        bastante de jogar nas minhas horas vagas.
-                    </p>
-                </div>
-            </section>
-        </article>
-
-        <article>
-            <section id="contact">
-                <div class="col-lg-8 col-sm-auto col-md-auto offset-lg-2 offset-md-auto offset-sm-auto">
-                    <h1 class="text-end fw-bolder">CONTATO</h1>
-                    <hr>
-                </div>
-                <div class="col-lg-8 col-sm-auto col-md-auto offset-lg-2 offset-md-auto offset-sm-auto home-content">
-                    <form onsubmit="sendEmail(); reset(); return false;" class="contact p-3">
-                        <div class="col-lg-6 col-sm-auto col-md-auto offset-lg-3 offset-md-auto offset-sm-auto">
-                            <div class="row form-floating mb-3">
-                                <input type="text" name="name" id="name" class="form-control" placeholder="Nome" required>
-                                <label for="name" class="text-white">Nome<span class="text-danger"> *</span></label>
-                            </div>
+                    <div class="col-lg-6 col-sm-auto col-md-auto offset-lg-3 offset-md-auto offset-sm-auto">
+                        <div class="row form-floating mb-3">
+                            <input type="text" name="phone" id="fone" class="form-control" placeholder="Telefone">
+                            <label for="phone" class="text-white">Telefone</label>
                         </div>
-                        <div class="col-lg-6 col-sm-auto col-md-auto offset-lg-3 offset-md-auto offset-sm-auto">
-                            <div class="row form-floating mb-3">
-                                <input type="email" name="email" id="email" class="form-control" placeholder="Email" required>
-                                <label for="email" class="text-white">Email <span class="text-danger"> *</span></label>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-sm-auto col-md-auto offset-lg-3 offset-md-auto offset-sm-auto">
-                            <div class="row form-floating mb-3">
-                                <input type="text" name="phone" id="fone" class="form-control" placeholder="Telefone">
-                                <label for="phone" class="text-white">Telefone</label>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-sm-auto col-md-auto offset-lg-3 offset-md-auto offset-sm-auto">
-                            <div class="row form-floating mb-3">
-                                <textarea class="form-control" name="contactMsg" id="contactMsg"
-                                    placeholder="Mensagem" style="background-color: rgba(255, 255, 255, 0); border: none;backdrop-filter: blur(9.8px);
+                    </div>
+                    <div class="col-lg-6 col-sm-auto col-md-auto offset-lg-3 offset-md-auto offset-sm-auto">
+                        <div class="row form-floating mb-3">
+                            <textarea class="form-control" name="contactMsg" id="contactMsg" placeholder="Mensagem"
+                                style="background-color: rgba(255, 255, 255, 0); border: none;backdrop-filter: blur(9.8px);
                                     -webkit-backdrop-filter: blur(9.8px); height: 200px;" required></textarea>
-                                    <label for="phone" class="text-white">Mensagem <span class="text-danger"> *</span></label>
-                            </div>
+                            <label for="phone" class="text-white">Mensagem <span class="text-danger"> *</span></label>
                         </div>
-                        <div
-                            class="col-lg-6 col-sm-auto col-md-auto offset-lg-3 offset-md-auto offset-sm-auto text-end">
-                            <button type="submit" class="btn btn-lg btn-outline-info">Enviar</button>
-                        </div>
-                    </form>
-                </div>
-            </section>
-        </article>
+                    </div>
+                    <div class="col-lg-6 col-sm-auto col-md-auto offset-lg-3 offset-md-auto offset-sm-auto text-end">
+                        <button type="submit" class="btn btn-lg btn-outline-light">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
     </main>
 
     <footer id="footer" class="footer row d-flex justify-content-center">
         <div class="col-6 col-sm-auto col-md-auto footer-socials">
-            <a class="link-light" href="https://wa.me/5511932094609" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-            <a class="link-light" href="https://github.com/JeanCSF" target="_blank"><i class="fa-brands fa-github"></i></a>
-            <a class="link-light" href="https://www.linkedin.com/in/jean-carlos-6149a2232/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a class="link-light" href="https://wa.me/5511932094609" target="_blank"><i
+                    class="fa-brands fa-whatsapp" title="WhatsApp"></i></a>
+            <a class="link-light" href="https://github.com/JeanCSF" target="_blank"><i
+                    class="fa-brands fa-github" title="GitHub"></i></a>
+            <a class="link-light" href="https://www.linkedin.com/in/jean-carlos-6149a2232/" target="_blank"><i
+                    class="fa-brands fa-linkedin" title="Linkedin"></i></a>
         </div>
         <div class="text-center">
             <p class="fw-bold">JeanCSF&copy; <span id="yearSpan"></span></p>
@@ -179,7 +227,6 @@
     <script src="assets/js/smtp.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/font-awesome-all.min.js"></script>
 </body>
 

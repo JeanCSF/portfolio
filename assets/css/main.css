@@ -10,6 +10,7 @@
 body,
 html {
     height: auto;
+    scroll-behavior: smooth;
 
 }
 
@@ -24,7 +25,7 @@ body {
 body:before {
     content: "";
     position: absolute;
-    background: url('../img/background.png');
+    background: url('../img/background.webp');
     background-size: cover;
     z-index: -1;
     /* Keep the background behind the content */
@@ -42,18 +43,25 @@ body:before {
     margin-top: 120px;
 }
 
+section {
+    margin-bottom: 330px;
+    scroll-margin-top: 115px;
+}
+
 .home-content {
     background-color: rgba(255, 255, 255, 0.1);
-    padding: 0.9em;
+    padding: 2vh;
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    height: 100%;
+    height: fit-content;
+    overflow: hidden;
 }
 
 .home-content img {
     width: 250px;
+    float: left;
+    margin-right: 15px;
 }
-
 
 .home-content p {
     text-align: justify;
@@ -124,10 +132,6 @@ body:before {
     backdrop-filter: blur(9.8px);
     -webkit-backdrop-filter: blur(9.8px);
     border: none;
-}
-
-section {
-    margin-top: 350px;
 }
 
 #landing {
