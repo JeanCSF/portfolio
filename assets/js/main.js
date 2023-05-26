@@ -14,7 +14,7 @@ function sendEmail() {
     Email.send({
         SecureToken: '96f7349b-fde6-446c-88ca-9fbafe5803c2',
         To: 'jean.csf.17@gmail.com',
-        From: document.getElementById('email').value,
+        From: 'emailt104@gmail.com',
         Subject: "Novo Contato - Portifólio",
         Body: "Nome: " + document.getElementById('name').value
             + "<br>Email: " + document.getElementById('email')
