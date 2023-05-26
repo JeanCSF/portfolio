@@ -4,6 +4,8 @@ if (base_url != 'http://127.0.0.1:5500') {
 }
 console.log(base_url);
 
+window.onload = function () { scrollFunction() };
+
 window.onscroll = function () { scrollFunction() };
 
 let year = new Date();
@@ -26,7 +28,7 @@ function sendEmail() {
 }
 
 function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    if (document.body.scrollTop > 15 || document.documentElement.scrollTop > 15) {
         document.getElementById('btnTop').removeAttribute('hidden');
         document.getElementById('footer').classList.remove('fixed-bottom');
     } else {

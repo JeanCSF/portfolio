@@ -35,7 +35,7 @@
                         <a href="#contact" class="nav-link mx-2" role="button">Contato</a>
                     </li>
                     <li class="nav-item">
-                        <a href="/assets/" class="nav-link mx-2" role="button" download="Profile.pdf">Currículo</a>
+                        <a href="/assets/Profile.pdf" class="nav-link mx-2" role="button" download>Currículo</a>
                     </li>
                 </ul>
             </div>
@@ -61,7 +61,7 @@
             </div>
             <div class="col-lg-8 col-sm-auto col-md-auto offset-lg-2 offset-sm-auto offset-md-auto home-content">
                 <img class="img-fluid rounded" src="assets/img/projects/portfolio/main-portfolio.webp"
-                    alt="Main login screen">
+                    alt="Portfolio landing page" width="250" height="auto">
                 <p class="fs-3">Portifólio</p>
                 <hr>
                 <p class="fs-5">Meu portifólio pessoal</p>
@@ -69,7 +69,8 @@
                     Site desenvolvido com o propósito de por em prática os meus conhecimentos em front-end e também exibir
                     os meus principais projetos para que tanto eu quanto os visitantes possam acompanhar minha evolução.
                 </p>
-                <p class="my-5">Tecnologias utilizadas:
+                <hr>
+                <p class="my-5">Tecnologias utilizadas: <br>
                     <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="_blank"rel="noopener noreferrer"><i class="fa-brands fa-html5 fs-3 ms-2 text-white" title="HTML5"></i></a>
                     <a href="https://www.w3.org/TR/CSS/#css" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-css3-alt fs-3 ms-2 text-white" title="CSS3"></i></a>
                     <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-js fs-3 ms-2 text-white" title="JavaScript"></i></a>
@@ -82,7 +83,7 @@
             </div>
             <div class="col-lg-8 col-sm-auto col-md-auto offset-lg-2 offset-sm-auto offset-md-auto home-content mt-5">
                 <img class="img-fluid rounded" src="assets/img/projects/loginci4/main-login.webp"
-                    alt="Main login screen">
+                    alt="Main login screen" width="250" height="auto">
                 <p class="fs-3">Sistema de login</p>
                 <hr>
                 <p class="fs-5">Autenticação de usuário desenvolvida na framework CodeIgniter4(PHP)</p>
@@ -93,7 +94,8 @@
                     digitadas estão corretas e se a conta já foi ativada(via e-mail de ativação),
                     o usuário só irá ter acesso se as credenciais estiverem corretas e a conta estiver ativa.
                 </p>
-                <p class="mt-5">Tecnologias utilizadas:
+                <hr>
+                <p class="mt-5">Tecnologias utilizadas: <br>
                     <a href="https://www.codeigniter.com/" target="_blank" rel="noreferrer"><i class="fa fa-fire-flame-curved fs-3 text-white" title="CodeIgniter4"></i></a> 
                     <a href="https://www.php.net/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-php fs-3 ms-2 text-white" title="PHP"></i></a>
                     <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"><i class="fa fa-database fs-3 ms-2 text-white" title="MySQL"></i></a>
@@ -110,14 +112,15 @@
             </div>
             <div class="col-lg-8 col-sm-auto col-md-auto offset-lg-2 offset-sm-auto offset-md-auto home-content mt-5">
                 <img class="img-fluid rounded" src="assets/img/projects/triangles/main-triangles.webp"
-                    alt="Main cronometer screen">
+                    alt="Main triangles screen" width="250" height="auto">
                 <p class="fs-3">Calculo de triângulo</p>
                 <hr>
                 <p class="fs-5">Aplicação desenvolvida em PHP que calcula os lados de um triângulo</p>
                 <p>O Usuário digita os lados do triângulo e clica em calcular em seguida a aplicação retorna
                     para ele que tipo de triângulo é aquele, e caso não seja possível formar um triângulo com as medidas
                     fornecidas o usuário é informado.</p>
-                <p class="mt-5">Tecnologias utilizadas: 
+                    <hr>
+                <p class="mt-5">Tecnologias utilizadas: <br>
                     <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="_blank"rel="noopener noreferrer"><i class="fa-brands fa-html5 fs-3 text-white" title="HTML5"></i></a>
                     <a href="https://www.w3.org/TR/CSS/#css" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-css3-alt fs-3 ms-2 text-white" title="CSS3"></i></a>
                     <a href="https://www.php.net/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-php fs-3 ms-2 text-white" title="PHP"></i></a>
@@ -173,7 +176,11 @@
                 <hr>
             </div>
             <div class="col-lg-8 col-sm-auto col-md-auto offset-lg-2 offset-md-auto offset-sm-auto home-content">
-                <form onsubmit="sendEmail(); reset(); return false;" class="contact p-3">
+                <form action="https://formsubmit.co/jean.csf.17@gmail.com" method="POST" class="contact p-3">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_subject" value="Novo Contato - Portifólio">
+                    <input type="hidden" name="_next" value="https://jeancsf.github.io/portfolio/">
                     <div class="col-lg-6 col-sm-auto col-md-auto offset-lg-3 offset-md-auto offset-sm-auto">
                         <div class="row form-floating mb-3">
                             <input type="text" name="name" id="name" class="form-control" placeholder="Nome" required>
@@ -195,19 +202,18 @@
                     </div>
                     <div class="col-lg-6 col-sm-auto col-md-auto offset-lg-3 offset-md-auto offset-sm-auto">
                         <div class="row form-floating mb-3">
-                            <textarea class="form-control" name="contactMsg" id="contactMsg" placeholder="Mensagem"
+                            <textarea class="form-control" name="message" id="message" placeholder="Mensagem"
                                 style="background-color: rgba(255, 255, 255, 0); border: none;backdrop-filter: blur(9.8px);
                                     -webkit-backdrop-filter: blur(9.8px); height: 200px;" required></textarea>
                             <label for="phone" class="text-white">Mensagem <span class="text-danger"> *</span></label>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-sm-auto col-md-auto offset-lg-3 offset-md-auto offset-sm-auto text-end">
-                        <button type="submit" class="btn btn-lg btn-outline-light">Enviar</button>
+                    <div class="row">
+                        <button type="submit" class="col-lg-6 col-sm-auto col-md-auto offset-lg-3 offset-md-auto offset-sm-auto btn btn-lg btn-outline-light">Enviar</button>
                     </div>
                 </form>
             </div>
         </section>
-
     </main>
 
     <footer id="footer" class="footer row d-flex justify-content-center">
