@@ -12,7 +12,7 @@ document.getElementById('ageSpan').textContent = getAge('1997/01/05');
 
 function sendEmail() {
     Email.send({
-        SecureToken: '20833104-3bba-4395-985a-88f4866d23e1',
+        SecureToken: '63f435dc-d58e-4181-9cf3-16b69e3edc3a',
         To: 'jean.csf.17@gmail.com',
         From: 'emailt104@gmail.com',
         Subject: "Novo Contato - Portifólio",
