@@ -2,7 +2,6 @@ var base_url = window.location.origin;
 if (base_url != 'http://127.0.0.1:5500') {
     base_url += '/portfolio'
 }
-console.log(base_url);
 
 window.onload = function () { scrollFunction() };
 
@@ -11,21 +10,6 @@ window.onscroll = function () { scrollFunction() };
 let year = new Date();
 document.getElementById('yearSpan').textContent = year.getFullYear();
 document.getElementById('ageSpan').textContent = getAge('1997/01/05');
-
-function sendEmail() {
-    Email.send({
-        SecureToken: '63f435dc-d58e-4181-9cf3-16b69e3edc3a',
-        To: 'jean.csf.17@gmail.com',
-        From: 'emailt104@gmail.com',
-        Subject: "Novo Contato - Portifólio",
-        Body: "Nome: " + document.getElementById('name').value
-            + "<br>Email: " + document.getElementById('email')
-            + "<br>Telefone: " + document.getElementById('phone')
-            + "<br>Mensagem: <br><p>" + document.getElementById('contactMsg') + "</p>"
-    }).then(
-        message => alert("Enviou")
-    );
-}
 
 function scrollFunction() {
     if (document.body.scrollTop > 15 || document.documentElement.scrollTop > 15) {
