@@ -12,21 +12,19 @@ html {
     background: linear-gradient(135deg, rgb(3, 24, 89) 0 1%, rgb(23, 63, 115) 50% 100%);
     background-size: cover;
     background-repeat: repeat-y;
-
-
+    scroll-behavior: smooth;
 }
 
 body {
-    scroll-behavior: smooth;
     position: absolute;
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
-
 }
 
 .content {
     flex: 1 0 auto;
+    background: linear-gradient(135deg, rgb(3, 24, 89) 0 1%, rgb(23, 63, 115) 50% 100%);
 }
 
 section {
@@ -35,7 +33,9 @@ section {
     scroll-margin-top: 115px;
     min-width: 100%;
     min-height: 100vh;
-    margin-bottom: 50px;
+    margin-bottom: 150px;
+    transition: all 1s;
+
 }
 
 .home-content {
@@ -43,7 +43,6 @@ section {
     padding: 2vh;
     height: fit-content;
     overflow: hidden;
-    transition: all 0.5s;
     border-radius: 5px;
 }
 
@@ -53,7 +52,7 @@ section {
 
 .footer {
     flex-shrink: 0;
-    background: rgb(23, 63, 115);
+    background: linear-gradient(135deg, rgb(3, 24, 89) 0 70%, rgb(169, 198, 217) 150% 100%);
     text-align: center;
     margin: 0;
 }
@@ -107,7 +106,7 @@ section {
 }
 
 .contact input:focus {
-    background-color: rgba(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
     backdrop-filter: blur(9.8px);
     -webkit-backdrop-filter: blur(9.8px);
     border: none;
@@ -119,6 +118,11 @@ section {
 
 #contact button:hover {
     background-color: rgb(23, 63, 115);
+}
+
+#landing {
+    margin-top: 150px;
+
 }
 
 @media screen and (max-width: 768px) {
