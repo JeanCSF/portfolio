@@ -39,7 +39,7 @@ section {
 }
 
 .home-content {
-    background: linear-gradient(-45deg, rgb(23, 63, 115) 0 70%, rgb(169, 198, 217) 150% 100%);
+    background: linear-gradient(135deg, rgb(23, 63, 115) 0 70%, rgb(169, 198, 217) 150% 100%);
     padding: 2vh;
     height: fit-content;
     overflow: hidden;
