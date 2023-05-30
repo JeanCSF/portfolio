@@ -12,7 +12,7 @@ html {
     background: linear-gradient(135deg, rgb(3, 24, 89) 0 1%, rgb(23, 63, 115) 50% 100%);
     background-size: cover;
     background-repeat: repeat-y;
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth !important; */
 }
 
 body {
