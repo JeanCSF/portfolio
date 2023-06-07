@@ -1,4 +1,6 @@
-* {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,28 +11,28 @@
 body,
 html {
     height: auto;
-    background: linear-gradient(135deg, rgb(3, 24, 89) 0 1%, rgb(23, 63, 115) 50% 100%);
-    background-size: cover;
-    background-repeat: repeat-y;
-    /* scroll-behavior: smooth !important; */
 }
 
+/* html {
+    color-scheme: light dark;
+} */
+
 body {
-    position: absolute;
+    /* position: absolute; */
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
+    background-image: linear-gradient(-45deg, #334857, #000028, #173F73);
 }
 
 .content {
     flex: 1 0 auto;
-    background: linear-gradient(135deg, rgb(3, 24, 89) 0 1%, rgb(23, 63, 115) 50% 100%);
 }
 
 section {
     margin: 0;
     padding: 0;
-    scroll-margin-top: 115px;
+    padding-block: 5rem;
     min-width: 100%;
     min-height: 100vh;
     margin-bottom: 150px;
@@ -39,12 +41,20 @@ section {
 }
 
 .home-content {
-    background: linear-gradient(135deg, rgb(23, 63, 115) 0 70%, rgb(169, 198, 217) 150% 100%);
-    padding: 2vh;
-    height: fit-content;
-    overflow: hidden;
-    border-radius: 5px;
+    position: relative;
+    padding: 1vh;
+
 }
+
+.home-content::after {
+    content: '';
+    background-image: linear-gradient(135deg, rgb(23, 63, 115) 0 70%, rgb(169, 198, 217) 150% 100%);
+    position: absolute;
+    inset: 0;
+    transform: skewY(-10deg);
+    z-index: -1;
+}
+
 
 .home-content p {
     text-align: justify;
@@ -52,7 +62,7 @@ section {
 
 .footer {
     flex-shrink: 0;
-    background: linear-gradient(135deg, rgb(3, 24, 89) 0 70%, rgb(169, 198, 217) 150% 100%);
+    background-image: linear-gradient(135deg, #334857, #000000, #173F73);
     text-align: center;
     margin: 0;
 }
@@ -66,7 +76,7 @@ section {
 }
 
 .navbar {
-    background: linear-gradient(-45deg, rgb(3, 24, 89) 0 70%, rgb(169, 198, 217) 150% 100%);
+    background-image: linear-gradient(135deg, #334857, #000000, #173F73);
     backdrop-filter: blur(9.8px);
     -webkit-backdrop-filter: blur(9.8px);
 }
@@ -113,20 +123,21 @@ section {
 }
 
 #landing a:hover {
-    background-color: rgb(23, 63, 115);
+    background-color: rgb(17, 41, 73);
 }
 
 #contact button:hover {
     background-color: rgb(23, 63, 115);
 }
 
-#landing {
-    margin-top: 150px;
-
+#landing hr {
+    width: 80%;
+    margin: 0 auto;
 }
+
 
 @media screen and (max-width: 768px) {
     section {
-        scroll-margin-top: 325px;
+        scroll-margin-top: 225px;
     }
-  }
+}
