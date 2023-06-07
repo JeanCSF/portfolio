@@ -55,6 +55,15 @@ section {
     z-index: -1;
 }
 
+.home-content::before {
+    content: '';
+    background-image: linear-gradient(135deg, #334857, #000000, #173F73);
+    position: absolute;
+    inset: 0;
+    transform: skewY(10deg);
+    z-index: -1;
+}
+
 
 .home-content p {
     text-align: justify;
