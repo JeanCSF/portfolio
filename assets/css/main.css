@@ -22,7 +22,7 @@ body {
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
-    background: #000000;
+    background: #121212;
 }
 
 .content {
