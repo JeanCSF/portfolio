@@ -150,3 +150,8 @@ section {
         scroll-margin-top: 225px;
     }
 }
+
+.title-hr hr{
+    width: 40%;
+    margin-left: auto;
+}
