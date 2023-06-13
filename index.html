@@ -62,78 +62,104 @@
 
     <main id="content" class="content container-fluid mb-5">
         <a href="#" role="button" class="btnTop" id="btnTop" title="Topo" hidden></a>
-        <section>
+        <section class="row">
             <div id="landing"
-                class="text-center col-lg-8 col-sm-auto col-md-auto offset-lg-2 offset-sm-auto offset-md-auto p-5">
-                <p class="fs-2">JEAN CARLOS</p>
+                class="text-center col-lg-8 col-sm-auto col-md-auto offset-lg-2 offset-sm-auto offset-md-auto p-3">
+                <span class="fs-2 d-block my-3">JEAN CARLOS</span>
                 <hr>
-                <p class="fst-italic fs-4">Full Stack Web Developer</p>
-                <a role="button" href="#contact" class="mx-5 btn btn-lg btn-outline-light text-white fs-1">Fale Comigo</a>
+                <span class="fst-italic fs-4 d-block my-3">Full Stack Web Developer</span>
+                <a id="btn-hover" role="button" href="#contact"
+                    class="mx-5 btn btn-lg btn-outline-light text-white fs-2">Fale Comigo</a>
             </div>
         </section>
-        <buttton id="easterEgg" class="btn btn-lg btn-outline-primary border-0 bg-transparent" tabindex="-1" title="You found me ;)" role="button" onClick="easter()"> </buttton>
-        <section id="projects">
+        <buttton id="easterEgg" class="btn btn-lg btn-outline-primary border-0 bg-transparent" tabindex="-1"
+            title="You found me ;)" role="button" onClick="easter()"> </buttton>
+        <section id="projects" class="row">
             <div class="col-lg-8 col-sm-auto col-md-auto offset-lg-2 offset-sm-auto offset-md-auto title-hr">
                 <h1 class="text-end fw-bolder">PROJETOS</h1>
                 <hr>
             </div>
-            <div class="col-lg-8 col-sm-auto col-md-auto offset-lg-2 offset-sm-auto offset-md-auto home-content d-flex flex-column justify-content-between">
-                <p class="fs-3">Portifólio</p>
-                <hr>
-                <p class="fs-5">Meu portifólio pessoal(este site)</p>
+            <div class="col-lg-8 col-sm-auto col-md-auto offset-lg-2 offset-sm-auto offset-md-auto tec-hr projects-card">
+                <span class="fs-3 d-block">Portifólio</span>
+                <img src="/assets/img/projects/portfolio.png" alt="portfolio mobile printscreen" width="330">
+                <span class="fs-5 d-block mb-2">Meu portifólio pessoal(este site)</span>
                 <p class="mb-5">
-                    Site desenvolvido com o propósito de por em prática os meus conhecimentos em front-end e também exibir
+                    Site desenvolvido com o propósito de por em prática os meus conhecimentos em front-end e também
+                    exibir
                     os meus principais projetos para que tanto eu quanto os visitantes possam acompanhar minha evolução.
                 </p>
-                <hr>
-                <p>Tecnologias utilizadas: <br>
-                    <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="_blank"rel="noopener noreferrer"><i class="fa-brands fa-html5 fs-3 ms-2 text-white" title="HTML5"></i></a>
-                    <a href="https://www.w3.org/TR/CSS/#css" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-css3-alt fs-3 ms-2 text-white" title="CSS3"></i></a>
-                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-js fs-3 ms-2 text-white" title="JavaScript"></i></a>
-                    <a href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-bootstrap fs-3 ms-2 text-white" title="Bootstrap"></i></a>
-                    <a href="https://fontawesome.com/" target="_blank" rel="noopener noreferrer"><i class="fa fa-font-awesome fs-3 ms-2 text-white" title="FontAwesome"></i></a>
-                </p>
-                <div class="mt-5 p-5 text-end">
-                    <a href="https://github.com/JeanCSF/portfolio" target="_blank" class="text-white">Repositório</a>
-                </div>
+                
             </div>
-            <div class="col-lg-8 col-sm-auto col-md-auto offset-lg-2 offset-sm-auto offset-md-auto home-content mt-5 d-flex flex-column justify-content-between">
-                <p class="fs-3">Movies DB</p>
+            <div class="col-lg-8 col-sm-auto col-md-auto offset-lg-2 offset-sm-auto offset-md-auto tec-hr">
+                <a href="https://github.com/JeanCSF/portfolio" id="btn-hover" target="_blank"
+                    class="btn btn-lg btn-outline-light text-white mt-5"><i class="fa-brands fa-github"></i>
+                    Repositório</a>
                 <hr>
-                <span class="fs-5">Aplicação desenvolvida em React.js que consome a API do TMBD</span>
-                <p>
-                    Projeto desenvolvido como forma de praticar os Hooks do React(useState, useEffect)
-                    utilizando dos mesmos para consumir a API do TMDB e alimentar as páginas da aplicação.
-                    A principal parte do projeto foi feita seguindo <a href="https://youtu.be/XqxUHVVO7-U" target="_blank" rel="external" class="text-white" title="Link do tutorial">este tutorial</a>
-                    do Matheus Battisti no canal "Hora de Codar" do Youtube, você pode encontrar o 
-                    <a href="https://github.com/matheusbattisti/movies_lib" target="_blank" rel="external" class="text-white" title="Repositório original">repósitório original aqui</a>.
-                </p>
-                    <hr>
                 <p>Tecnologias utilizadas: <br>
-                    <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="_blank"rel="noopener noreferrer"><i class="fa-brands fa-html5 fs-3 text-white" title="HTML5"></i></a>
-                    <a href="https://www.w3.org/TR/CSS/#css" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-css3-alt fs-3 ms-2 text-white" title="CSS3"></i></a>
-                    <a href="https://react.dev/" target="_blank"rel="noopener noreferrer"><i class="fa-brands fa-react fs-3 ms-2 text-white" title="React"></i></a>
+                    <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="_blank"
+                        rel="noopener noreferrer"><i class="fa-brands fa-html5 fs-3 ms-2 text-white"
+                            title="HTML5"></i></a>
+                    <a href="https://www.w3.org/TR/CSS/#css" target="_blank" rel="noopener noreferrer"><i
+                            class="fa-brands fa-css3-alt fs-3 ms-2 text-white" title="CSS3"></i></a>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"
+                        rel="noopener noreferrer"><i class="fa-brands fa-js fs-3 ms-2 text-white"
+                            title="JavaScript"></i></a>
+                    <a href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer"><i
+                            class="fa-brands fa-bootstrap fs-3 ms-2 text-white" title="Bootstrap"></i></a>
+                    <a href="https://fontawesome.com/" target="_blank" rel="noopener noreferrer"><i
+                            class="fa fa-font-awesome fs-3 ms-2 text-white" title="FontAwesome"></i></a>
                 </p>
-                <div class="mt-5 p-5 d-flex justify-content-between">
-                    <a href="https://jeancsf-tmdb.netlify.app/" target="_blank" rel="external" class="text-white">Visite o app</a>
-                    <a href="https://github.com/JeanCSF/tmdb" target="_blank"
-                        class="text-white">Repositório</a>
-                </div>
             </div>
         </section>
 
-        <section id="about">
+        <section id="tmdb" class="row">
+            <div class="col-lg-8 col-sm-auto col-md-auto offset-lg-2 offset-sm-auto offset-md-auto mt-5 tec-hr projects-card">
+                <span class="fs-3 d-block">Movies DB</span>
+                <img src="/assets/img/projects/tmdb.png" alt="tmdb app mobile printscreen" width="330">
+                <span class="fs-5">Aplicação em React.js que consome a API do TMBD</span>
+                <p class="mb-5">
+                    Projeto desenvolvido como forma de praticar os Hooks do React(useState, useEffect)
+                    utilizando dos mesmos para consumir a API do TMDB e alimentar as páginas da aplicação.
+                    A principal parte do projeto foi feita seguindo <a href="https://youtu.be/XqxUHVVO7-U"
+                        target="_blank" rel="external" class="text-white" title="Link do tutorial">este tutorial</a>
+                    do Matheus Battisti no canal "Hora de Codar" do Youtube, você pode encontrar o
+                    <a href="https://github.com/matheusbattisti/movies_lib" target="_blank" rel="external"
+                        class="text-white" title="Repositório original">repósitório original aqui</a>.
+                </p>
+                    
+            </div>
+            <div class="col-lg-8 col-sm-auto col-md-auto offset-lg-2 offset-sm-auto offset-md-auto mt-5 tec-hr">
+                <p class="d-flex justify-content-between">
+                        <a href="https://github.com/JeanCSF/tmdb" target="_blank" id="btn-hover" class="btn btn-lg btn-outline-light text-white mt-5"><i class="fa-brands fa-github"></i> Repositório</a>
+                        <a href="https://jeancsf-tmdb.netlify.app/" target="_blank" id="btn-hover" rel="external" class="btn btn-lg btn-outline-light text-white mt-5"> <i class="fa fa-desktop"></i> Visite o app</a>
+                    </p>
+                <hr>
+                <p>Tecnologias utilizadas: <br>
+                    <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="_blank"
+                        rel="noopener noreferrer"><i class="fa-brands fa-html5 fs-3 text-white" title="HTML5"></i></a>
+                    <a href="https://www.w3.org/TR/CSS/#css" target="_blank" rel="noopener noreferrer"><i
+                            class="fa-brands fa-css3-alt fs-3 ms-2 text-white" title="CSS3"></i></a>
+                    <a href="https://react.dev/" target="_blank" rel="noopener noreferrer"><i
+                            class="fa-brands fa-react fs-3 ms-2 text-white" title="React"></i></a>
+                </p>
+            </div>
+        </section>
+
+
+
+        <section id="about" class="row">
             <div class="col-lg-8 col-sm-auto col-md-auto offset-lg-2 offset-md-auto offset-sm-auto title-hr">
                 <h1 class="text-end fw-bolder">SOBRE MIM</h1>
                 <hr>
             </div>
-            <div class="col-lg-8 col-sm-auto col-md-auto offset-lg-2 offset-sm-auto offset-md-auto home-content">
+            <div class="col-lg-8 col-sm-auto col-md-auto offset-lg-2 offset-sm-auto offset-md-auto p-3 tec-hr">
                 <p class="fs-4">Olá, me chamo Jean Carlos</p>
                 <p>
                     Atualmente tenho <span id="ageSpan"></span> anos, estou cursando Análise e Desenvolvimento de
                     Sistemas na UNICID do Tatuapé partindo para o último semestre. Venho de uma transição
                     de carreira, anteriormente trabalhava com vendas no setor de varejo e atualmente sou estagiário de
-                    desenvolvimento pelo CRF-SP, mas meu contrato está perto de acabar e por norma a empresa não efetiva, 
+                    desenvolvimento pelo CRF-SP, mas meu contrato está perto de acabar e por norma a empresa não
+                    efetiva,
                     então sigo a procura de uma nova oportunidade se for o caso pode entra em contato comigo.
                 </p>
                 <p>
@@ -147,16 +173,28 @@
                 <hr>
                 <span class="mt-5 fs-4">Tecnologias que utilizo:</span>
                 <p>
-                    <a href="https://www.codeigniter.com/" target="_blank" rel="noreferrer"><i class="fa fa-fire-flame-curved fs-3 text-white" title="CodeIgniter4"></i></a> 
-                    <a href="https://www.php.net/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-php fs-3 ms-2 text-white" title="PHP"></i></a>
-                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-js fs-3 ms-2 text-white" title="JavaScript"></i></a>
-                    <a href="https://react.dev/" target="_blank"rel="noopener noreferrer"><i class="fa-brands fa-react fs-3 ms-2 text-white" title="React"></i></a>
-                    <a href="https://nodejs.org/en" target="_blank"rel="noopener noreferrer"><i class="fa-brands fa-node-js fs-3 ms-2 text-white" title="NodeJS"></i></a>
-                    <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"><i class="fa fa-database fs-3 ms-2 text-white" title="MySQL"></i></a>
-                    <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="_blank"rel="noopener noreferrer"><i class="fa-brands fa-html5 fs-3 ms-2 text-white" title="HTML5"></i></a>
-                    <a href="https://www.w3.org/TR/CSS/#css" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-css3-alt fs-3 ms-2 text-white" title="CSS3"></i></a>
-                    <a href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-bootstrap fs-3 ms-2 text-white" title="Bootstrap"></i></a>
-                    <a href="https://fontawesome.com/" target="_blank" rel="noopener noreferrer"><i class="fa fa-font-awesome fs-3 ms-2 text-white" title="FontAwesome"></i></a>
+                    <a href="https://www.codeigniter.com/" target="_blank" rel="noreferrer"><i
+                            class="fa fa-fire-flame-curved fs-3 text-white" title="CodeIgniter4"></i></a>
+                    <a href="https://www.php.net/" target="_blank" rel="noopener noreferrer"><i
+                            class="fa-brands fa-php fs-3 ms-2 text-white" title="PHP"></i></a>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"
+                        rel="noopener noreferrer"><i class="fa-brands fa-js fs-3 ms-2 text-white"
+                            title="JavaScript"></i></a>
+                    <a href="https://react.dev/" target="_blank" rel="noopener noreferrer"><i
+                            class="fa-brands fa-react fs-3 ms-2 text-white" title="React"></i></a>
+                    <a href="https://nodejs.org/en" target="_blank" rel="noopener noreferrer"><i
+                            class="fa-brands fa-node-js fs-3 ms-2 text-white" title="NodeJS"></i></a>
+                    <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"><i
+                            class="fa fa-database fs-3 ms-2 text-white" title="MySQL"></i></a>
+                    <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="_blank"
+                        rel="noopener noreferrer"><i class="fa-brands fa-html5 fs-3 ms-2 text-white"
+                            title="HTML5"></i></a>
+                    <a href="https://www.w3.org/TR/CSS/#css" target="_blank" rel="noopener noreferrer"><i
+                            class="fa-brands fa-css3-alt fs-3 ms-2 text-white" title="CSS3"></i></a>
+                    <a href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer"><i
+                            class="fa-brands fa-bootstrap fs-3 ms-2 text-white" title="Bootstrap"></i></a>
+                    <a href="https://fontawesome.com/" target="_blank" rel="noopener noreferrer"><i
+                            class="fa fa-font-awesome fs-3 ms-2 text-white" title="FontAwesome"></i></a>
                 </p>
             </div>
         </section>
@@ -166,7 +204,7 @@
                 <h1 class="text-end fw-bolder">CONTATO</h1>
                 <hr>
             </div>
-            <div class="col-lg-8 col-sm-auto col-md-auto offset-lg-2 offset-md-auto offset-sm-auto home-content">
+            <div class="col-lg-8 col-sm-auto col-md-auto offset-lg-2 offset-md-auto offset-sm-auto">
                 <form action="https://formsubmit.co/jean.csf.17@gmail.com" method="POST" class="contact p-3">
                     <input type="hidden" name="_template" value="table">
                     <input type="hidden" name="_captcha" value="false">
@@ -194,12 +232,14 @@
                     <div class="col-lg-6 col-sm-auto col-md-auto offset-lg-3 offset-md-auto offset-sm-auto">
                         <div class="row form-floating mb-3">
                             <textarea class="form-control" name="message" id="message" placeholder="Mensagem"
-                                style="background-color: rgba(0, 0, 0, 0); border-color: white; height: 200px;" required></textarea>
+                                style="background-color: #121212; border-color: white; height: 200px;"
+                                required></textarea>
                             <label for="message" class="text-white">Mensagem <span class="text-danger"> *</span></label>
                         </div>
                     </div>
                     <div class="row">
-                        <button type="submit" class="col-lg-6 col-sm-auto col-md-auto offset-lg-3 offset-md-auto offset-sm-auto btn btn-lg btn-outline-light text-white">Enviar</button>
+                        <button id="btn-hover" type="submit"
+                            class="col-lg-6 col-sm-auto col-md-auto offset-lg-3 offset-md-auto offset-sm-auto btn btn-lg btn-outline-light text-white">Enviar</button>
                     </div>
                 </form>
             </div>
@@ -208,10 +248,10 @@
 
     <footer id="footer" class="footer row d-flex justify-content-center">
         <div class="col-6 col-sm-auto col-md-auto footer-socials">
-            <a class="link-light" href="https://wa.me/5511932094609" target="_blank"><i
-                    class="fa-brands fa-whatsapp" title="WhatsApp"></i></a>
-            <a class="link-light" href="https://github.com/JeanCSF" target="_blank"><i
-                    class="fa-brands fa-github" title="GitHub"></i></a>
+            <a class="link-light" href="https://wa.me/5511932094609" target="_blank"><i class="fa-brands fa-whatsapp"
+                    title="WhatsApp"></i></a>
+            <a class="link-light" href="https://github.com/JeanCSF" target="_blank"><i class="fa-brands fa-github"
+                    title="GitHub"></i></a>
             <a class="link-light" href="https://www.linkedin.com/in/jean-carlos-6149a2232/" target="_blank"><i
                     class="fa-brands fa-linkedin" title="Linkedin"></i></a>
         </div>
