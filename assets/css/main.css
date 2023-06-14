@@ -87,8 +87,10 @@ section {
 
 
 .projects-card img {
+    aspect-ratio: attr(330) / attr(auto);
     float: right;
     max-width: 330px;
+    max-height: auto;
 }
 
 section p {
