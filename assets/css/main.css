@@ -181,3 +181,9 @@ section p {
 .tec-hr hr {
     width: 60%;
 }
+
+.tec-i {
+    font-size: 3em !important;
+    margin-block: 0.5em;
+    padding: auto;
+}
