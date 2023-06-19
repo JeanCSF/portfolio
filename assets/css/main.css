@@ -28,11 +28,17 @@ body::before {
     position: absolute;
     inset: 0;
     z-index: -1;
-    --mask:
-        radial-gradient(57.5px at 50% calc(100% + 0.00px), #0000 calc(99% - 15px), #000 calc(101% - 15px) 99%, #0000 101%) calc(50% - 100px) calc(50% - 32.5px + .5px)/200px 65px,
-        radial-gradient(57.5px at 50% 0px, #0000 calc(99% - 15px), #000 calc(101% - 15px) 99%, #0000 101%) 50% calc(50% + 32.5px)/200px 65px;
-    -webkit-mask: var(--mask);
-    mask: var(--mask);
+    --s: 300px;
+    /* control the size */
+    --c1: #1d1d1d;
+    --c2: #4e4f51;
+    --c3: #3c3c3c;
+
+    background:
+        repeating-conic-gradient(from 30deg, #0000 0 120deg, var(--c3) 0 180deg) calc(.5*var(--s)) calc(.5*var(--s)*0.577),
+        repeating-conic-gradient(from 30deg, var(--c1) 0 60deg, var(--c2) 0 120deg, var(--c3) 0 180deg);
+    background-size: var(--s) calc(var(--s)*0.577);
+    /* 0.577 = tan(30deg)*/
 }
 
 .content {
@@ -73,28 +79,55 @@ section {
 }
 
 #projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding: 3rem;
+}
+
+#projects .projects-card {
+    width: 33%;
+    margin-bottom: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: #212121;
+    padding: 1.5rem;
+    border-radius: 20px;
+    box-shadow: 15px 15px 30px rgb(25, 25, 25),
+        -15px -15px 30px rgb(60, 60, 60);
+}
+
+.projects-card img {
+    max-width: 100%;
+    aspect-ratio: attr(200) / attr(auto);
+    max-height: auto;
+    border-radius: 20px;
+}
+
+#contact {
     position: relative;
 }
 
-#projects::before {
+#contact::before {
     content: '';
     background-image: linear-gradient(155deg, #334857, #000000, #173F73);
     position: absolute;
     inset: 0;
     z-index: -1;
+    --mask: 
+    conic-gradient(from 135deg at top,#0000,#000 1deg 89deg,#0000 90deg) top/60.00px 51% repeat-x,
+    conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) bottom/60.00px 51% repeat-x;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
     transform: skewY(-10deg);
 }
 
-
-.projects-card img {
-    aspect-ratio: attr(330) / attr(auto);
-    float: right;
-    max-width: 330px;
-    max-height: auto;
-}
-
 section p {
-    max-width: 65ch;
+    max-width: 50ch;
 }
 
 .footer {
@@ -152,7 +185,6 @@ section p {
 
 .contact input:focus {
     background-color: #121212;
-    /* border: none; */
 }
 
 #landing hr {
@@ -173,9 +205,24 @@ section p {
     section {
         scroll-margin-top: 225px;
     }
-    .projects-card img {
-        display: block;
-        width: 330px;
+
+    #projects {
+        padding: 0;
+
+    }
+
+    #projects .projects-card {
+        width: 100% !important;
+        margin-bottom: 2.5rem;
+        display: flex;
+        align-content: center;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: #212121;
+        padding: 1rem;
+        border-radius: 20px;
+        box-shadow: 15px 15px 30px rgb(25, 25, 25),
+            -15px -15px 30px rgb(60, 60, 60);
     }
 }
 
@@ -183,13 +230,9 @@ section p {
     width: 40%;
     margin-left: auto;
 }
-
 .tec-hr hr {
     width: 60%;
 }
-
 .tec-i {
-    font-size: 3em !important;
-    margin-block: 0.5em;
-    padding: auto;
+    font-size: 2rem !important;
 }
