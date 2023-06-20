@@ -88,24 +88,40 @@ section {
 }
 
 #projects .projects-card {
-    width: 33%;
+    width: 48%;
     margin-bottom: 2.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    /* display: flex; */
     align-items: center;
     background: #212121;
     padding: 1.5rem;
     border-radius: 20px;
     box-shadow: 15px 15px 30px rgb(25, 25, 25),
         -15px -15px 30px rgb(60, 60, 60);
+    --moz-box-shadow: 15px 15px 30px rgb(25, 25, 25),
+        -15px -15px 30px rgb(60, 60, 60);
+    --webkit-box-shadow: 15px 15px 30px rgb(25, 25, 25),
+        -15px -15px 30px rgb(60, 60, 60);
+}
+
+.projects-card .card-text {
+    margin-top: .5rem;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    padding: .3rem;
+    border-radius: 5px;
+}
+.projects-card .card-text div {
+    margin-block: 1.5rem;
 }
 
 .projects-card img {
     max-width: 100%;
     aspect-ratio: attr(200) / attr(auto);
-    max-height: auto;
+    max-height: fit-content;
     border-radius: 20px;
+    float: left;
+    margin-right: 1.5rem;
 }
 
 #contact {
@@ -118,16 +134,12 @@ section {
     position: absolute;
     inset: 0;
     z-index: -1;
-    --mask: 
-    conic-gradient(from 135deg at top,#0000,#000 1deg 89deg,#0000 90deg) top/60.00px 51% repeat-x,
-    conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) bottom/60.00px 51% repeat-x;
-  -webkit-mask: var(--mask);
-          mask: var(--mask);
-    transform: skewY(-10deg);
-}
-
-section p {
-    max-width: 50ch;
+    --mask:
+        conic-gradient(from 135deg at top, #0000, #000 1deg 89deg, #0000 90deg) top/98.00px 51% repeat-x,
+        conic-gradient(from -45deg at bottom, #0000, #000 1deg 89deg, #0000 90deg) bottom/98.00px 51% repeat-x;
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
+    /* transform: skewY(-10deg); */
 }
 
 .footer {
@@ -215,7 +227,6 @@ section p {
         width: 100% !important;
         margin-bottom: 2.5rem;
         display: flex;
-        align-content: center;
         flex-direction: column;
         justify-content: space-between;
         background-color: #212121;
@@ -224,15 +235,23 @@ section p {
         box-shadow: 15px 15px 30px rgb(25, 25, 25),
             -15px -15px 30px rgb(60, 60, 60);
     }
+    
+    .projects-card img {
+        margin-right: 0;
+
+    }
+
 }
 
 .title-hr hr {
     width: 40%;
     margin-left: auto;
 }
+
 .tec-hr hr {
     width: 60%;
 }
+
 .tec-i {
-    font-size: 2rem !important;
+    font-size: 3rem !important;
 }
