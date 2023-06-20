@@ -111,6 +111,7 @@ section {
     padding: .3rem;
     border-radius: 5px;
 }
+
 .projects-card .card-text div {
     margin-block: 1.5rem;
 }
@@ -140,6 +141,14 @@ section {
     -webkit-mask: var(--mask);
     mask: var(--mask);
     /* transform: skewY(-10deg); */
+}
+
+#landingBtn {
+    transform: translate(0%, -300%);
+    position: relative;
+    animation: landingBtn 1s ease infinite alternate;
+    transition: all .5s ease-in;
+    border-radius: 40px;
 }
 
 .footer {
@@ -235,7 +244,7 @@ section {
         box-shadow: 15px 15px 30px rgb(25, 25, 25),
             -15px -15px 30px rgb(60, 60, 60);
     }
-    
+
     .projects-card img {
         margin-right: 0;
 
@@ -254,4 +263,14 @@ section {
 
 .tec-i {
     font-size: 3rem !important;
+}
+
+@keyframes landingBtn {
+    from {
+        top: 48%;
+    }
+
+    to {
+        top: 52%;
+    }
 }
