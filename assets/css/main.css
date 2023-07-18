@@ -94,7 +94,8 @@ section p {
 #projects .projects-card {
     width: 48%;
     margin-bottom: 2.5rem;
-    /* display: flex; */
+    display: flex;
+    flex-direction: column;
     align-items: center;
     background: #212121;
     padding: 1.5rem;
@@ -225,14 +226,31 @@ section p {
     background-color: rgb(17, 41, 73) !important;
 }
 
+.title-hr hr {
+    width: 40%;
+    margin-left: auto;
+}
 
-@media screen and (max-width: 40em) {
+.tec-hr hr {
+    width: 60%;
+}
+
+.tec-i {
+    font-size: 3rem !important;
+}
+
+@media screen and (max-width: 768px) {
     section {
         scroll-margin-top: 225px;
     }
 
+    #landing {
+        display: flex;
+        justify-content: center;
+    }
+
     #projects {
-        padding: 0;
+        padding: 0 !important;
 
     }
 
@@ -242,6 +260,7 @@ section p {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        align-items: center;
         background-color: #212121;
         padding: 1rem;
         border-radius: 20px;
@@ -256,17 +275,95 @@ section p {
 
 }
 
-.title-hr hr {
-    width: 40%;
-    margin-left: auto;
-}
+/* @media screen and (max-width: 992px) {
+    section {
+        scroll-margin-top: 225px;
+    }
 
-.tec-hr hr {
-    width: 60%;
-}
+    #landing {
+        display: flex;
+        justify-content: center;
+    }
 
-.tec-i {
-    font-size: 3rem !important;
+    #projects {
+        padding: 0;
+
+    }
+
+    #projects .projects-card {
+        width: 49% !important;
+        margin-bottom: 2.5rem;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: space-between;
+        background-color: #212121;
+        padding: 1rem;
+        border-radius: 20px;
+        box-shadow: 15px 15px 30px rgb(25, 25, 25),
+            -15px -15px 30px rgb(60, 60, 60);
+    }
+
+    .projects-card img {
+        margin-right: 0;
+
+    }
+
+} */
+
+@media screen and (max-width: 1200px) {
+    section {
+        scroll-margin-top: 225px;
+    }
+
+    #projects {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin-inline: auto;
+        padding: 3rem;
+    }
+    
+    #projects .projects-card {
+        width: 48%;
+        margin-bottom: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        background: #212121;
+        padding: 1.5rem;
+        border-radius: 20px;
+        box-shadow: 15px 15px 30px rgb(25, 25, 25),
+            -15px -15px 30px rgb(60, 60, 60);
+        --moz-box-shadow: 15px 15px 30px rgb(25, 25, 25),
+            -15px -15px 30px rgb(60, 60, 60);
+        --webkit-box-shadow: 15px 15px 30px rgb(25, 25, 25),
+            -15px -15px 30px rgb(60, 60, 60);
+    }
+    
+    .projects-card .card-text {
+        margin-top: .5rem;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid white;
+        padding: .3rem;
+        border-radius: 5px;
+    }
+    
+    .projects-card .card-text div {
+        margin-block: 1.5rem;
+    }
+    
+    .projects-card img {
+        max-width: 80%;
+        aspect-ratio: attr(200) / attr(auto);
+        max-height: fit-content;
+        border-radius: 20px;
+        float: left;
+        margin-right: 1.5rem;
+    }
+
 }
 
 @keyframes landingBtn {
